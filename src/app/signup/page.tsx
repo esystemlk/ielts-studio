@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import { GoogleAuthProvider, createUserWithEmailAndPassword, signInWithPopup, updateProfile, type User } from 'firebase/auth';
 import { useAuth, useFirestore, useUser } from '@/firebase';
 import { ensureStudioProfile, type StudioProfileExtras } from '@/lib/studio-auth';
-import { WordsReveal, RotatingWord } from '@/components/motion';
+import { WordsReveal, RotatingWord, Marquee } from '@/components/motion';
 import { AuthFooter, GoogleIcon, Wordmark, authErrorMessage } from '@/components/ui';
 
 const BANDS = [5.5, 6, 6.5, 7, 7.5, 8, 8.5];
@@ -101,6 +101,7 @@ export default function StudioSignupPage() {
           {/* eslint-enable @next/next/no-img-element */}
         </div>
         <p className="muted" style={{ fontSize: 13, margin: '18px 0 0' }}>Speaking practice is coming soon.</p>
+        <Marquee items={['Multiple choice', 'Matching headings', 'True / False / Not given', 'Map labelling', 'Sentence completion', 'Form completion', 'Summary completion', 'Matching features', 'Short answers', 'Diagram labelling']} />
       </aside>
     </div>
   );

@@ -7,7 +7,7 @@ import { GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup, type U
 import { useAuth, useFirestore, useUser } from '@/firebase';
 import { ensureStudioProfile } from '@/lib/studio-auth';
 import { safeRedirect } from '@/lib/studio';
-import { WordsReveal, RotatingWord } from '@/components/motion';
+import { WordsReveal, RotatingWord, BandChart, Marquee } from '@/components/motion';
 import { AuthFooter, GoogleIcon, Wordmark, authErrorMessage } from '@/components/ui';
 
 export default function StudioLoginPage() {
@@ -63,6 +63,7 @@ export default function StudioLoginPage() {
         <p className="label" style={{ margin: '0 0 10px' }}>How your work is marked</p>
         <p className="aside-rotate">Practise <RotatingWord words={['Listening', 'Reading', 'Writing', 'Speaking']} /> the way the test marks it.</p>
         <WordsReveal as="h2" delay={0.2} text="Practise against the same 9-band scale the test uses." />
+        <BandChart />
         <div className="band-scale">
           <div><b className="num">8</b><p><strong>Very good user</strong>Handles complex language well, with only occasional slips.</p></div>
           <div><b className="num">7</b><p><strong>Good user</strong>Copes with detailed reasoning; some mistakes in unfamiliar situations.</p></div>
@@ -70,6 +71,7 @@ export default function StudioLoginPage() {
           <div><b className="num">5</b><p><strong>Modest user</strong>Gets the overall meaning in most situations, with frequent errors.</p></div>
         </div>
         <p className="muted" style={{ fontSize: 13, margin: '18px 0 0' }}>Full mocks give a band for Listening, Reading and Writing, and an overall average of the three.</p>
+        <Marquee items={['Multiple choice', 'Matching headings', 'True / False / Not given', 'Map labelling', 'Sentence completion', 'Form completion', 'Summary completion', 'Matching features', 'Short answers', 'Diagram labelling']} />
       </aside>
     </div>
   );

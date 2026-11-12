@@ -8,6 +8,7 @@ import { collection, doc, getDoc, getDocs, limit, orderBy, query } from 'firebas
 import { useAuth, useFirestore, useUser } from '@/firebase';
 import { RequireAuth } from '@/components/require-auth';
 import { Pic, Wordmark } from '@/components/ui';
+import { CountUp, WordsReveal } from '@/components/motion';
 import { PLAN_PRICES, planLabel, planOf } from '@/lib/plans';
 
 type Profile = Record<string, any>; // eslint-disable-line @typescript-eslint/no-explicit-any
@@ -61,7 +62,7 @@ function Dashboard() {
         <nav aria-label="Main">
           <Link href="/dashboard" aria-current="page">Dashboard</Link>
           <p>Practice</p>
-          {skills.map(s => <Link key={s.id} href={s.href}><span className="nl"><Pic name={s.id} className={s.id === 'speaking' && plan === 'free' ? 'ic faded' : 'ic'} />{s.name}</span></Link>)}
+          {skills.map((s, i) => <Link key={s.id} href={s.href} style={{ '--i': i + 2 } as React.CSSProperties}><span className="nl"><Pic name={s.id} className={s.id === 'speaking' && plan === 'free' ? 'ic faded' : 'ic'} />{s.name}</span></Link>)}
           <p>Tests</p>
           <Link href="/mocks"><span className="nl"><Pic name="mocks" />Mock tests</span><small>${PLAN_PRICES.mock}</small></Link>
           <p>Account</p>
@@ -80,13 +81,13 @@ function Dashboard() {
           <section className="greeting" aria-labelledby="hello">
             <div>
               <p className="date">{new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' })}</p>
-              <h1 id="hello">{greeting()}{name ? `, ${name}` : ''}</h1>
+              <WordsReveal as="h1" text={`${greeting()}${name ? `, ${name}` : ''}`} key={name} />
               <p className="plan-line"><Pic name={badge} className="plan-badge" />{planLabel[plan]} plan{plan === 'free' ? ' · Listening and Reading are free' : ''}</p>
             </div>
             <div className="facts">
-              <div><span>Target</span><b className="num">{target ? band(target) : <small>Not set</small>}</b></div>
-              <div><span>Latest mock</span><b className="num">{latest ? band(latest.overall) : <small>None yet</small>}</b></div>
-              <div><span>Test day</span><b className="num">{countdown !== null ? <>{countdown} <small>{countdown === 1 ? 'day' : 'days'}</small></> : <small>Not set</small>}</b></div>
+              <div><span>Target</span><b className="num">{target ? <CountUp value={target} decimals={1} /> : <small>Not set</small>}</b></div>
+              <div><span>Latest mock</span><b className="num">{latest ? <CountUp value={latest.overall} decimals={1} /> : <small>None yet</small>}</b></div>
+              <div><span>Test day</span><b className="num">{countdown !== null ? <><CountUp value={countdown} /> <small>{countdown === 1 ? 'day' : 'days'}</small></> : <small>Not set</small>}</b></div>
             </div>
           </section>
 
@@ -104,14 +105,14 @@ function Dashboard() {
           <section className="section" aria-labelledby="skills-h">
             <div className="section-head"><h2 id="skills-h">Your skills</h2><span className="muted" style={{ fontSize: 14 }}>{latest ? 'Bands from your latest mock' : 'Bands appear after a mock test'}</span></div>
             <div className="skills">
-              {skills.map(s => {
+              {skills.map((s, i) => {
                 const r = latest && (s.id === 'listening' || s.id === 'reading' || s.id === 'writing') ? latest[s.id] : null;
                 const locked = s.id === 'speaking' && plan === 'free';
                 return (
-                  <Link key={s.id} className={`skill${locked ? ' soon' : ''}`} href={locked ? '/' : s.href}>
+                  <Link key={s.id} className={`skill spot${locked ? ' soon' : ''}`} href={locked ? '/' : s.href} style={{ '--i': i } as React.CSSProperties}>
                     <Pic name={s.id} className={locked ? 'skill-ic faded' : 'skill-ic'} />
                     <h3>{s.name}</h3>
-                    {r ? <span className="band num">{band(r.band)} <small>/ 9</small></span> : <span className="band soon-band">{locked ? 'Plus plan' : 'No mock yet'}</span>}
+                    {r ? <><span className="band num"><CountUp value={r.band} decimals={1} /> <small>/ 9</small></span><span className="band-bar"><i style={{ '--w': `${(r.band / 9) * 100}%` } as React.CSSProperties} /></span></> : <span className="band soon-band">{locked ? 'Plus plan' : 'No mock yet'}</span>}
                     <p>{s.note}</p>
                     <span className="go">{locked ? 'See plans →' : 'Open →'}</span>
                   </Link>
@@ -126,16 +127,16 @@ function Dashboard() {
               {mocks === null ? <p className="empty" role="status">Loading…</p> : mocks.length === 0 ? <p className="empty">No mock results yet. Your bands appear here after a full mock test.</p> : (
                 <table className="list">
                   <thead><tr><th scope="col">Mock</th><th scope="col" className="hide-sm">Date</th><th scope="col">Overall</th></tr></thead>
-                  <tbody>{mocks.slice(0, 6).map(m => (
-                    <tr key={m.id}><td>{m.result.title}<br /><span className="muted" style={{ fontSize: 13 }}>L {band(m.result.listening?.band)} · R {band(m.result.reading?.band)} · W {band(m.result.writing?.band)}</span></td><td className="hide-sm num muted">{m.at?.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}</td><td className="score num">{band(m.result.overall)}</td></tr>
+                  <tbody>{mocks.slice(0, 6).map((m, i) => (
+                    <tr key={m.id} style={{ '--i': i } as React.CSSProperties}><td>{m.result.title}<br /><span className="muted" style={{ fontSize: 13 }}>L {band(m.result.listening?.band)} · R {band(m.result.reading?.band)} · W {band(m.result.writing?.band)}</span></td><td className="hide-sm num muted">{m.at?.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}</td><td className="score num">{band(m.result.overall)}</td></tr>
                   ))}</tbody>
                 </table>
               )}
             </section>
-            <section className="panel" aria-labelledby="credits-h">
+            <section className="panel spot" aria-labelledby="credits-h">
               <h3 id="credits-h" className="ic-head"><Pic name="credits" />Your plan</h3>
               <div className="credit-row"><span>Plan</span><b>{planLabel[plan]}</b></div>
-              <div className="credit-row"><span>Mock test credits</span><b className="num">{profile ? mockCredits : '—'}</b></div>
+              <div className="credit-row"><span>Mock test credits</span><b className="num">{profile ? <CountUp value={mockCredits} /> : '—'}</b></div>
               <p className="muted" style={{ fontSize: 13, margin: '10px 0 14px' }}>Same account as Smart Labs. Mock tests are ${PLAN_PRICES.mock} each.</p>
               <Link className="btn secondary small block" href="/">{plan === 'free' ? 'See plans' : 'Manage plan'}</Link>
             </section>

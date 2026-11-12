@@ -1,0 +1,99 @@
+/* ---------- Advanced motion: auth panel, dashboard and Bolt the robot ---------- */
+
+/* Band chart + marquee on the auth panel */
+.auth-aside { justify-content: safe center; }
+.band-chart { margin: 0 0 14px; }
+.band-chart svg { width: 100%; max-width: 340px; max-height: 18vh; height: auto; overflow: visible; }
+.band-chart line { stroke: #2e2e2e; stroke-width: 1; }
+.band-chart text { fill: #737373; font: 500 10px var(--sans); }
+.band-chart .line { fill: none; stroke: #ff4d55; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 1.8s .6s cubic-bezier(.6,.1,.2,1) forwards; filter: drop-shadow(0 0 6px rgba(255,77,85,.6)); }
+.band-chart .area { fill: rgba(255,77,85,.10); opacity: 0; animation: fade-in 1s 1.6s forwards; }
+.band-chart circle { fill: #0d0d0d; stroke: #ff4d55; stroke-width: 2.5; transform-box: fill-box; transform-origin: center; transform: scale(0); animation: pop .45s cubic-bezier(.3,1.6,.5,1) forwards; }
+.band-chart circle.last { fill: #ff4d55; animation: pop .45s cubic-bezier(.3,1.6,.5,1) forwards, pulse-ring 1.8s 2.6s ease-out infinite; }
+.band-chart figcaption { display: flex; justify-content: space-between; align-items: baseline; font-size: 13px; color: #a3a3a3; max-width: 420px; }
+.band-chart figcaption b { font: 500 30px/1 var(--serif); color: #fff; }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+@keyframes fade-in { to { opacity: 1; } }
+@keyframes pop { to { transform: scale(1); } }
+@keyframes pulse-ring { 0% { stroke-width: 2.5; stroke-opacity: 1; } 100% { stroke-width: 16; stroke-opacity: 0; } }
+.marquee { margin-top: 16px; overflow: hidden; mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); }
+.marquee-track { display: flex; gap: 10px; width: max-content; animation: marquee 32s linear infinite; }
+.marquee span { font-size: 12px; color: #d4d4d4; border: 1px solid #333; border-radius: 999px; padding: 6px 12px; white-space: nowrap; background: rgba(255,255,255,.03); }
+@keyframes marquee { to { transform: translateX(calc(-50% - 5px)); } }
+
+/* Primary button sheen, input focus glow */
+.auth-form .btn:not(.secondary), .continue .btn { position: relative; overflow: hidden; }
+.auth-form .btn:not(.secondary)::after, .continue .btn::after { content: ''; position: absolute; inset: 0; background: linear-gradient(110deg, transparent 35%, rgba(255,255,255,.35) 50%, transparent 65%); transform: translateX(-120%); animation: sheen 4.5s 1.5s ease-in-out infinite; pointer-events: none; }
+@keyframes sheen { 0%, 70% { transform: translateX(-120%); } 100% { transform: translateX(120%); } }
+.field input { transition: border-color .2s, box-shadow .25s; }
+.field input:focus { box-shadow: 0 0 0 4px var(--accent-wash); }
+
+/* Dashboard entrance + interaction */
+.main > * { animation: fade-up .7s cubic-bezier(.2,.7,.2,1) both; }
+.main > *:nth-child(2) { animation-delay: .12s; }
+.main > *:nth-child(3) { animation-delay: .24s; }
+.main > *:nth-child(4) { animation-delay: .36s; }
+.side nav > * { animation: slide-in .5s cubic-bezier(.2,.7,.2,1) both; animation-delay: calc(var(--i, 0) * 40ms); }
+@keyframes slide-in { from { opacity: 0; transform: translateX(-14px); } to { opacity: 1; transform: none; } }
+.side nav a { transition: background .2s, color .2s, transform .2s; }
+.side nav a:hover { transform: translateX(3px); }
+.skills .skill { animation: card-in .7s cubic-bezier(.2,.7,.2,1) both; animation-delay: calc(.3s + var(--i, 0) * 90ms); }
+@keyframes card-in { from { opacity: 0; transform: translateY(22px) scale(.97); } to { opacity: 1; transform: none; } }
+.spot { position: relative; overflow: hidden; isolation: isolate; transform: perspective(700px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)); transition: transform .25s ease, box-shadow .25s ease, border-color .25s; }
+.spot::before { content: ''; position: absolute; inset: 0; z-index: -1; opacity: 0; transition: opacity .3s; background: radial-gradient(240px circle at var(--mx, 50%) var(--my, 50%), rgba(208,16,27,.12), transparent 70%); }
+.spot:hover::before { opacity: 1; }
+.spot:hover { box-shadow: 0 14px 34px -16px rgba(0,0,0,.35); border-color: var(--rule-strong); }
+.spot:not(:hover) { --rx: 0deg; --ry: 0deg; }
+.skill .skill-ic { transition: transform .4s cubic-bezier(.3,1.6,.5,1); }
+.skill:hover .skill-ic { transform: translateY(-4px) rotate(-6deg) scale(1.08); }
+.skill .go { transition: transform .25s, color .25s; }
+.skill:hover .go { transform: translateX(5px); color: var(--accent); }
+.band-bar { height: 4px; border-radius: 4px; background: var(--rule); overflow: hidden; margin: 4px 0 6px; }
+.band-bar i { display: block; height: 100%; width: var(--w); background: var(--accent); border-radius: inherit; transform-origin: left; animation: grow 1.2s .8s cubic-bezier(.2,.7,.2,1) both; }
+@keyframes grow { from { transform: scaleX(0); } }
+.continue { position: relative; overflow: hidden; }
+.continue::before { content: ''; position: absolute; inset: -1px; z-index: 0; pointer-events: none; background: linear-gradient(100deg, transparent 40%, rgba(208,16,27,.08) 50%, transparent 60%); background-size: 250% 100%; animation: wash 6s linear infinite; }
+.continue > * { position: relative; }
+@keyframes wash { from { background-position: 150% 0; } to { background-position: -100% 0; } }
+.list tbody tr { animation: fade-up .5s cubic-bezier(.2,.7,.2,1) both; animation-delay: calc(.5s + var(--i, 0) * 70ms); transition: background .2s; }
+.list tbody tr:hover { background: var(--tint); }
+.me-badge, .top-badge, .plan-badge { animation: badge-float 4s ease-in-out infinite; }
+@keyframes badge-float { 50% { transform: translateY(-3px) rotate(-3deg); } }
+
+/* Bolt the robot (3D, drawn in a canvas by robot3d.ts) */
+.robot { position: fixed; z-index: 60; pointer-events: none; }
+.robot-body { display: block; width: 128px; height: 160px; pointer-events: auto; cursor: pointer; }
+/* Walk: JS moves him with a linear transition; the 3D model turns to face the way he goes. */
+.robot-walk-right, .robot-walk-left { bottom: -8px; left: 0; }
+/* Peeks: from the right, left, top (hanging upside down) and bottom, at a spot JS picks. */
+.robot-peek-right { right: 0; animation: peek-r 6.5s cubic-bezier(.5,0,.3,1) forwards; }
+.robot-peek-right .robot-flip { transform: rotate(-70deg); }
+@keyframes peek-r { 0%, 100% { transform: translateX(110%); } 14%, 84% { transform: translateX(34%); } 40% { transform: translateX(26%); } }
+.robot-peek-left { left: 0; animation: peek-l 6.5s cubic-bezier(.5,0,.3,1) forwards; }
+.robot-peek-left .robot-flip { transform: rotate(70deg); }
+@keyframes peek-l { 0%, 100% { transform: translateX(-110%); } 14%, 84% { transform: translateX(-34%); } 40% { transform: translateX(-26%); } }
+.robot-peek-top { top: 0; margin-left: -64px; animation: peek-t 6.5s cubic-bezier(.5,0,.3,1) forwards; }
+.robot-peek-top .robot-flip { transform: rotate(180deg); }
+@keyframes peek-t { 0%, 100% { transform: translateY(-110%); } 14%, 84% { transform: translateY(-30%); } 45% { transform: translateY(-24%) rotate(-4deg); } 65% { transform: translateY(-28%) rotate(3deg); } }
+.robot-peek-bottom { bottom: 0; margin-left: -64px; animation: peek-b 6.5s cubic-bezier(.5,0,.3,1) forwards; }
+@keyframes peek-b { 0%, 100% { transform: translateY(110%); } 14%, 84% { transform: translateY(40%); } 45% { transform: translateY(34%); } }
+
+.robot-tip { position: absolute; bottom: calc(100% + 6px); left: 50%; transform: translateX(-50%); width: 230px; pointer-events: auto; background: #0d0d0d; color: #fff; border: 1px solid #3d3d3d; border-radius: 16px; padding: 12px 14px; font-size: 13px; line-height: 1.45; box-shadow: 0 12px 30px -10px rgba(0,0,0,.45); animation: pop-tip .35s cubic-bezier(.3,1.6,.5,1) both; }
+.robot-tip p { margin: 0 0 8px; }
+.robot-tip span { display: flex; gap: 12px; align-items: center; }
+.robot-tip a { color: #ff6a70; font-weight: 600; }
+.robot-tip button { background: none; border: 0; padding: 0; color: #a3a3a3; font: inherit; cursor: pointer; text-decoration: underline; }
+.robot-peek-right .robot-tip { left: auto; right: 70%; transform: none; bottom: 40%; animation-name: fade-up; }
+.robot-peek-left .robot-tip { left: 70%; transform: none; bottom: 40%; animation-name: fade-up; }
+.robot-peek-top .robot-tip { top: 72%; bottom: auto; }
+.robot-peek-bottom .robot-tip { bottom: 62%; }
+@keyframes pop-tip { from { opacity: 0; transform: translateX(-50%) translateY(8px) scale(.9); } }
+@media (max-width: 640px) { .robot-body { width: 96px; height: 120px; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .band-chart .line { stroke-dashoffset: 0; }
+  .band-chart .area { opacity: 1; }
+  .band-chart circle { transform: none; }
+  .band-chart *, .marquee-track, .main > *, .side nav > *, .skills .skill, .band-bar i, .continue::before, .list tbody tr, .me-badge, .top-badge, .plan-badge, .btn::after { animation: none !important; }
+  .spot { transform: none; }
+}

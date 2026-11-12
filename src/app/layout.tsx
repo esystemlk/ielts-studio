@@ -1,5 +1,8 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import './motion.css';
+import { Robot } from '@/components/robot';
+import { SpotlightFx } from '@/components/motion';
 
 export const metadata: Metadata = {
   title: { default: 'IELTS Studio', template: '%s · IELTS Studio' },
@@ -19,7 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" />
       </head>
-      <body>{children}</body>
+      <body>{children}<Robot /><SpotlightFx /></body>
     </html>
   );
 }
