@@ -69,3 +69,4 @@
 
 .mock-packs { display: grid; gap: 8px; }
 .mock-packs .btn { width: 100%; }
+.offer-tag { display: inline-block; font-weight: 700; color: #fff; background: var(--accent); border-radius: 999px; padding: 2px 8px; margin-right: 4px; font-size: 11px; letter-spacing: .02em; }

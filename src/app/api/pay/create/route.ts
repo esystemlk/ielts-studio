@@ -1,7 +1,8 @@
 import { NextResponse } from 'next/server';
 import { adminDb, uidFrom } from '@/lib/admin.server';
 import { checkoutHash } from '@/lib/billing';
-import { PRODUCTS, type ProductId } from '@/lib/products';
+import { PLUS_FIRST_MONTH_USD, PRODUCTS, type ProductId } from '@/lib/products';
+import { isNewToPlans } from '@/lib/offer.server';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -25,14 +26,17 @@ export async function POST(request: Request) {
     const profile = (await db.collection('users').doc(who.uid).get()).data() ?? {};
     const name = String(profile.displayName || 'Student').trim().split(/\s+/);
     const orderId = `studio_${product.id}_${who.uid.slice(0, 8)}_${Date.now()}`;
-    const amount = product.usd.toFixed(2);
+    // First month of Plus is discounted for students who have never bought a Studio plan.
+    const firstMonth = product.id === 'plus' && await isNewToPlans(who.uid);
+    const usd = firstMonth ? PLUS_FIRST_MONTH_USD : product.usd;
+    const amount = usd.toFixed(2);
     const currency = 'USD';
 
     await db.collection('payment_orders').add({
       orderId, userId: who.uid, source: 'ielts-studio',
       type: product.kind === 'plan' ? 'studio_plan' : 'studio_mock_credits',
       productId: product.id, plan: product.plan ?? null, ieltsMockCredits: product.credits ?? 0,
-      paymentAmount: product.usd, currency, paymentStatus: 'pending', createdAt: new Date(),
+      paymentAmount: usd, listPrice: product.usd, offer: firstMonth ? 'plus_first_month' : null, currency, paymentStatus: 'pending', createdAt: new Date(),
     });
 
     const params = {
@@ -40,7 +44,7 @@ export async function POST(request: Request) {
       return_url: `${appUrl}/payment?status=success&product=${product.id}`,
       cancel_url: `${appUrl}/payment?status=cancelled&product=${product.id}`,
       notify_url: `${appUrl}/api/pay/notify`,
-      order_id: orderId, items: product.label, amount, currency,
+      order_id: orderId, items: firstMonth ? `${product.label} (first month offer)` : product.label, amount, currency,
       first_name: name[0] || 'Student', last_name: name.slice(1).join(' ') || '-',
       email: String(profile.email || who.email || ''), phone: '0000000000',
       address: 'N/A', city: 'Colombo', country: 'Sri Lanka',

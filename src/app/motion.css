@@ -113,3 +113,5 @@
 .side nav .nav-button:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; }
 .side nav .nav-button .ic img { transition: transform .3s cubic-bezier(.3,1.6,.5,1); }
 .side nav .nav-button:hover .ic img { transform: translateX(3px); }
+.head-actions .who { font-size: 14px; color: var(--ink-2); }
+@media (max-width: 520px) { .head-actions .who { display: none; } }

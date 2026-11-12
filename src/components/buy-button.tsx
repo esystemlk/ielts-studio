@@ -8,11 +8,12 @@ import type { ProductId } from '@/lib/products';
 /** Starts a USD PayHere checkout for one product. Signed-out visitors go to sign up first, then back here. */
 export function BuyButton({ productId, className = 'btn', children }: { productId: ProductId; className?: string; children: React.ReactNode }) {
   const router = useRouter();
-  const { user } = useUser();
+  const { user, isUserLoading } = useUser();
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
 
   async function buy() {
+    if (isUserLoading) return; // still restoring the sign-in: do not treat as signed out
     if (!user) { router.push(`/signup?redirect=${encodeURIComponent(`${window.location.pathname}?buy=${productId}`)}`); return; }
     setBusy(true); setError('');
     try {
@@ -34,7 +35,7 @@ export function BuyButton({ productId, className = 'btn', children }: { productI
 
   return (
     <>
-      <button type="button" className={className} onClick={buy} disabled={busy}>{busy ? 'Opening PayHere…' : children}</button>
+      <button type="button" className={className} onClick={buy} disabled={busy || isUserLoading}>{busy ? 'Opening PayHere…' : children}</button>
       {error && <p role="alert" className="form-error" style={{ marginTop: 8 }}>{error}</p>}
     </>
   );

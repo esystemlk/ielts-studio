@@ -13,5 +13,8 @@ export const PRODUCTS: Record<ProductId, Product> = {
   'mock-5': { id: 'mock-5', label: 'IELTS Studio · 5 mock test credits', usd: PLAN_PRICES.mock * 5, kind: 'mock', credits: 5 },
 };
 
+/** New students (never bought a Studio plan) pay this for their first month of Plus; after that it is the normal price. */
+export const PLUS_FIRST_MONTH_USD = 9.99;
+
 /** One paid month of a plan. */
 export const PLAN_DAYS = 30;

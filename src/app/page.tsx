@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./plans.css";
 import { BuyButton } from "@/components/buy-button";
+import { AccountActions, FreeCta } from "@/components/account-actions";
+import { PlusOffer } from "@/components/plus-offer";
 
 export const metadata: Metadata = { title: "Plans" };
 
@@ -11,7 +13,7 @@ export default function PlansPage() {
       <div className="pricing">
         <header>
           <a className="wordmark" href="/dashboard"><picture className="mark"><source srcSet="/studio/logo-dark.png" media="(prefers-color-scheme: dark)" /><img src="/studio/logo.png" alt="IELTS Studio logo" width="256" height="256" /></picture><b>IELTS Studio</b><span>by Smart Labs</span></a>
-          <span className="head-actions"><a className="btn secondary small" href="/login">Sign in</a><a className="btn accent small signup-btn" href="/signup"><span className="signup-ic"><img src="/studio/signup.png" alt="" width="256" height="256" /></span>Sign up free</a></span>
+          <AccountActions />
         </header>
       
         <section className="intro" aria-labelledby="plans-h">
@@ -25,7 +27,7 @@ export default function PlansPage() {
             <div className="plan-head"><picture><source srcSet="/studio/badge-free-dark.png" media="(prefers-color-scheme: dark)" /><img src="/studio/badge-free.png" alt="" width="256" height="256" /></picture><h2>Free</h2></div>
             <div className="price"><b>$0</b><span>forever</span></div>
             <p className="plan-note">Everything you need to start practising today.</p>
-            <a className="btn secondary" href="/signup">Create free account</a>
+            <FreeCta />
             <ul className="feats">
               <li><span className="tick">✓</span><span>Listening practice<small>All tests in books 15–21</small></span></li>
               <li><span className="tick">✓</span><span>Reading practice<small>All tests in books 15–21</small></span></li>
@@ -39,10 +41,7 @@ export default function PlansPage() {
           <article className="plan featured">
             <span className="ribbon">Most popular</span>
             <div className="plan-head"><picture><source srcSet="/studio/badge-paid-dark.png" media="(prefers-color-scheme: dark)" /><img src="/studio/badge-paid.png" alt="" width="256" height="256" /></picture><h2>Plus</h2></div>
-            <div className="price"><b>$15</b><span>/ month</span></div>
-            <p className="renew">Monthly package · pay each month to keep it</p>
-            <p className="plan-note">Find out exactly where you lose marks, part by part.</p>
-            <BuyButton productId="plus" className="btn accent">Get Plus · $15</BuyButton>
+            <PlusOffer />
             <ul className="feats">
               <li><span className="tick">✓</span><span>Everything in Free</span></li>
               <li><span className="tick">✓</span><span>AI focused feedback on every part<small>What went wrong and what to practise next</small></span></li>
@@ -83,7 +82,7 @@ export default function PlansPage() {
           <h2 id="cmp-h">Compare plans</h2>
           <div className="compare-wrap">
             <table className="cmp">
-              <thead><tr><th scope="col">Feature</th><th scope="col">Free<small>$0</small></th><th scope="col" className="hl">Plus<small>$15 / month</small></th><th scope="col">Unlimited<small>$35 / month</small></th></tr></thead>
+              <thead><tr><th scope="col">Feature</th><th scope="col">Free<small>$0</small></th><th scope="col" className="hl">Plus<small>$9.99 first month, then $15</small></th><th scope="col">Unlimited<small>$35 / month</small></th></tr></thead>
               <tbody>
                 <tr className="group"><td colSpan={4}>Listening and Reading</td></tr>
                 <tr><td>Practice tests, books 15–21</td><td className="y">All</td><td className="y hl">All</td><td className="y">All</td></tr>
