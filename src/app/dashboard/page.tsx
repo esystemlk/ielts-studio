@@ -109,7 +109,7 @@ function Dashboard() {
                 const r = latest && (s.id === 'listening' || s.id === 'reading' || s.id === 'writing') ? latest[s.id] : null;
                 const locked = s.id === 'speaking' && plan === 'free';
                 return (
-                  <Link key={s.id} className={`skill spot${locked ? ' soon' : ''}`} href={locked ? '/' : s.href} style={{ '--i': i } as React.CSSProperties}>
+                  <Link key={s.id} className={`skill spot${locked ? ' locked' : ''}`} href={locked ? '/' : s.href} style={{ '--i': i } as React.CSSProperties}>
                     <Pic name={s.id} className={locked ? 'skill-ic faded' : 'skill-ic'} />
                     <h3>{s.name}</h3>
                     {r ? <><span className="band num"><CountUp value={r.band} decimals={1} /> <small>/ 9</small></span><span className="band-bar"><i style={{ '--w': `${(r.band / 9) * 100}%` } as React.CSSProperties} /></span></> : <span className="band soon-band">{locked ? 'Plus plan' : 'No mock yet'}</span>}

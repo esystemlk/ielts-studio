@@ -167,7 +167,7 @@ a { color: inherit; }
 .skill .band small { font: 400 14px var(--sans); color: var(--ink-3); }
 .skill p { margin: 0; font-size: 13px; color: var(--ink-3); }
 .skill .go { margin-top: auto; font-size: 14px; color: var(--ink-2); }
-.skill.soon .band { color: var(--ink-3); font-size: 20px; margin-top: 18px; }
+.skill .soon-band { font: 500 20px/1.2 var(--serif); color: var(--ink-3); margin-top: 18px; }
 
 .two { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: 28px; }
 table.list { width: 100%; border-collapse: separate; border-spacing: 0; background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); overflow: hidden; font-size: 14px; }
