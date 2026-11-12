@@ -97,3 +97,12 @@
   .band-chart *, .marquee-track, .main > *, .side nav > *, .skills .skill, .band-bar i, .continue::before, .list tbody tr, .me-badge, .top-badge, .plan-badge, .btn::after { animation: none !important; }
   .spot { transform: none; }
 }
+
+/* Sign-up button with its icon in a small white chip */
+.head-actions { display: inline-flex; gap: 8px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
+.signup-ic { display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: #fff; flex: none; transition: transform .35s cubic-bezier(.3,1.6,.5,1); }
+.btn.small .signup-ic { width: 22px; height: 22px; }
+.signup-ic img { width: 72%; height: 72%; object-fit: contain; }
+.btn.secondary .signup-ic { background: var(--accent-wash); }
+.signup-btn:hover .signup-ic { transform: rotate(-10deg) scale(1.12); }
+.signup-btn.accent { box-shadow: 0 6px 18px -8px rgba(208,16,27,.7); }

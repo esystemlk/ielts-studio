@@ -53,7 +53,9 @@ export default function StudioLoginPage() {
           </div>
           {error && <p role="alert" className="form-error">{error}</p>}
           <button className="btn block" type="submit" disabled={busy}>{busy ? 'Signing in…' : 'Sign in'}</button>
-          <p style={{ marginTop: 24, fontSize: 14, color: 'var(--ink-2)' }}>New to IELTS Studio? <Link href="/signup">Create an account</Link></p>
+          <p style={{ margin: '24px 0 10px', fontSize: 14, color: 'var(--ink-2)' }}>New to IELTS Studio?</p>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <Link className="btn secondary block signup-btn" href="/signup"><span className="signup-ic"><img src="/studio/signup.png" alt="" width={256} height={256} /></span>Create a free account</Link>
         </form>
         <AuthFooter />
       </main>

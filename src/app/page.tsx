@@ -10,7 +10,7 @@ export default function PlansPage() {
       <div className="pricing">
         <header>
           <a className="wordmark" href="/dashboard"><picture className="mark"><source srcSet="/studio/logo-dark.png" media="(prefers-color-scheme: dark)" /><img src="/studio/logo.png" alt="IELTS Studio logo" width="256" height="256" /></picture><b>IELTS Studio</b><span>by Smart Labs</span></a>
-          <a className="btn secondary small" href="/login">Sign in</a>
+          <span className="head-actions"><a className="btn secondary small" href="/login">Sign in</a><a className="btn accent small signup-btn" href="/signup"><span className="signup-ic"><img src="/studio/signup.png" alt="" width="256" height="256" /></span>Sign up free</a></span>
         </header>
       
         <section className="intro" aria-labelledby="plans-h">
