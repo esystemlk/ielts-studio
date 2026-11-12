@@ -66,3 +66,6 @@
   @media (max-width: 960px) { .plans { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; } .plan-note { min-height: 0; } }
   .pricing > header .wordmark b { white-space: nowrap; }
   @media (max-width: 520px) { .pricing > header .wordmark span { display: none; } .intro { margin-top: 36px; } }
+
+.mock-packs { display: grid; gap: 8px; }
+.mock-packs .btn { width: 100%; }

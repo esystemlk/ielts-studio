@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./plans.css";
+import { BuyButton } from "@/components/buy-button";
 
 export const metadata: Metadata = { title: "Plans" };
 
@@ -41,7 +42,7 @@ export default function PlansPage() {
             <div className="price"><b>$15</b><span>/ month</span></div>
             <p className="renew">Monthly package · pay each month to keep it</p>
             <p className="plan-note">Find out exactly where you lose marks, part by part.</p>
-            <a className="btn accent" href="/signup">Get Plus</a>
+            <BuyButton productId="plus" className="btn accent">Get Plus · $15</BuyButton>
             <ul className="feats">
               <li><span className="tick">✓</span><span>Everything in Free</span></li>
               <li><span className="tick">✓</span><span>AI focused feedback on every part<small>What went wrong and what to practise next</small></span></li>
@@ -55,7 +56,7 @@ export default function PlansPage() {
             <div className="price"><b>$35</b><span>/ month</span></div>
             <p className="renew">Monthly package · pay each month to keep it</p>
             <p className="plan-note">Everything in Plus, with no daily Writing limit.</p>
-            <a className="btn" href="/signup">Get Unlimited</a>
+            <BuyButton productId="unlimited" className="btn">Get Unlimited · $35</BuyButton>
             <ul className="feats">
               <li><span className="tick">✓</span><span>Everything in Plus</span></li>
               <li><span className="tick">✓</span><span>No daily Writing limit<small>Task 1 and Task 2, as often as you like</small></span></li>
@@ -73,7 +74,8 @@ export default function PlansPage() {
           <div className="mock-buy">
             <div className="price"><b>$5</b><span>/ mock test</span></div>
             <p className="muted" style={{margin: "0 0 12px", fontSize: "13px"}}>1 credit = 1 full mock test. Credits don’t expire while you keep using your account.</p>
-            <a className="btn accent" href="/signup">Buy mock credits</a>
+            <div className="mock-packs"><BuyButton productId="mock-1" className="btn accent">1 mock · $5</BuyButton><BuyButton productId="mock-3" className="btn secondary">3 mocks · $15</BuyButton><BuyButton productId="mock-5" className="btn secondary">5 mocks · $25</BuyButton></div>
+            <p className="muted" style={{margin: "10px 0 0", fontSize: "12px"}}>Paid securely in US dollars through PayHere.</p>
           </div>
         </section>
       
