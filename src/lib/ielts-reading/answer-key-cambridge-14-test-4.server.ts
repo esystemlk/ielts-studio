@@ -1,0 +1,49 @@
+import 'server-only';
+
+// Answer key for Cambridge IELTS 14 · Academic Reading Test 4, transcribed from
+// the owner-supplied material. Matching is case/whitespace-insensitive and
+// accepts the listed variants (see grading.ts). Questions 23-24 and 25-26 are
+// "choose TWO letters, in any order" pairs: both boxes in a pair accept both
+// correct letters, since the runner grades each box independently.
+export const answerKey: Record<string, string[]> = {
+  "1": ["four", "4"],
+  "2": ["young"],
+  "3": ["food"],
+  "4": ["light"],
+  "5": ["aggressively"],
+  "6": ["location"],
+  "7": ["neurons"],
+  "8": ["chemicals"],
+  "9": ["FALSE"],
+  "10": ["TRUE"],
+  "11": ["FALSE"],
+  "12": ["NOT GIVEN"],
+  "13": ["TRUE"],
+  "14": ["B"],
+  "15": ["E"],
+  "16": ["C"],
+  "17": ["A"],
+  "18": ["TRUE"],
+  "19": ["TRUE"],
+  "20": ["NOT GIVEN"],
+  "21": ["FALSE"],
+  "22": ["NOT GIVEN"],
+  "23": ["B", "D"],
+  "24": ["B", "D"],
+  "25": ["B", "E"],
+  "26": ["B", "E"],
+  "27": ["FALSE"],
+  "28": ["NOT GIVEN"],
+  "29": ["FALSE"],
+  "30": ["TRUE"],
+  "31": ["FALSE"],
+  "32": ["TRUE"],
+  "33": ["NOT GIVEN"],
+  "34": ["large"],
+  "35": ["microplastic"],
+  "36": ["populations"],
+  "37": ["concentrations"],
+  "38": ["predators"],
+  "39": ["disasters"],
+  "40": ["A"]
+};

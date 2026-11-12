@@ -1,0 +1,86 @@
+{
+  "id": "cambridge-14-test-3",
+  "title": "Cambridge IELTS 14 · Listening Test 3",
+  "version": 1,
+  "endpoint": "/api/ielts-listening/cambridge-14-test-3",
+  "sections": [
+    { "part": 1, "title": "Part 1", "subtitle": "Flanders Conference Hotel", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-14%2Ftest-3%2Fpart-1.mp3?alt=media" },
+    { "part": 2, "title": "Part 2", "subtitle": "Volunteering", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-14%2Ftest-3%2Fpart-2.m4a?alt=media" },
+    { "part": 3, "title": "Part 3", "subtitle": "School marching band", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-14%2Ftest-3%2Fpart-3.m4a?alt=media" },
+    { "part": 4, "title": "Part 4", "subtitle": "Concerts in a university arts festival", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-14%2Ftest-3%2Fpart-4.m4a?alt=media" }
+  ],
+  "groups": {
+    "1": { "title": "Questions 1–10 · Note completion", "instructions": "Complete the notes below (Flanders Conference Hotel). Write ONE WORD AND/OR A NUMBER for each answer.  Example: Customer Services Manager — Angela." },
+    "11": { "title": "Questions 11–12 · Choose TWO letters", "instructions": "Which TWO activities that volunteers do are mentioned? Choose TWO letters, A–E.  A: decorating · B: cleaning · C: delivering meals · D: shopping · E: childcare." },
+    "13": { "title": "Questions 13–14 · Choose TWO letters", "instructions": "Which TWO ways that volunteers can benefit from volunteering are mentioned? Choose TWO letters, A–E.  A: learning how to be part of a team · B: having a sense of purpose · C: realising how lucky they are · D: improved ability at time management · E: boosting their employment prospects." },
+    "15": {
+      "title": "Questions 15–20 · Matching",
+      "instructions": "What has each of the following volunteers helped someone to do? Choose SIX answers from the box and drag the correct letter, A–G, onto each volunteer — or tap a volunteer, then tap an option.",
+      "matchOptions": [
+        { "letter": "A", "text": "overcome physical difficulties" },
+        { "letter": "B", "text": "rediscover skills not used for a long time" },
+        { "letter": "C", "text": "improve their communication skills" },
+        { "letter": "D", "text": "solve problems independently" },
+        { "letter": "E", "text": "escape isolation" },
+        { "letter": "F", "text": "remember past times" },
+        { "letter": "G", "text": "start a new hobby" }
+      ]
+    },
+    "21": { "title": "Questions 21–26 · Note completion", "instructions": "Complete the notes below (Background on school marching band). Write ONE WORD AND/OR A NUMBER for each answer." },
+    "27": {
+      "title": "Questions 27–30 · Matching",
+      "instructions": "What problem does Joe mention in connection with each of the following band members? Choose FOUR answers from the box and drag the correct letter, A–F, onto each member — or tap a member, then tap an option.",
+      "matchOptions": [
+        { "letter": "A", "text": "makes a lot of mistakes in rehearsals" },
+        { "letter": "B", "text": "keeps making unhelpful suggestions" },
+        { "letter": "C", "text": "has difficulty with rhythm" },
+        { "letter": "D", "text": "misses too many rehearsals" },
+        { "letter": "E", "text": "has a health problem" },
+        { "letter": "F", "text": "doesn't mix with other students" }
+      ]
+    },
+    "31": { "title": "Questions 31–40 · Note completion", "instructions": "Complete the notes below (Concerts in a university arts festival). Write ONE WORD AND/OR A NUMBER for each answer." }
+  },
+  "questions": [
+    { "id": 1, "part": 1, "kind": "text", "prompt": "Conference facilities: the … (room for talks, holds up to 100)", "wordLimit": 2 },
+    { "id": 2, "part": 1, "kind": "text", "prompt": "Equipment available: projector and … ", "wordLimit": 2 },
+    { "id": 3, "part": 1, "kind": "text", "prompt": "Area for coffee and an … ", "wordLimit": 2 },
+    { "id": 4, "part": 1, "kind": "text", "prompt": "Free … throughout", "wordLimit": 2 },
+    { "id": 5, "part": 1, "kind": "text", "prompt": "A standard buffet lunch costs $ … per head", "wordLimit": 2 },
+    { "id": 6, "part": 1, "kind": "text", "prompt": "Accommodation: rooms will cost $ … including breakfast", "wordLimit": 2 },
+    { "id": 7, "part": 1, "kind": "text", "prompt": "Other facilities: a spa and a rooftop … ", "wordLimit": 2 },
+    { "id": 8, "part": 1, "kind": "text", "prompt": "A free shuttle service to the … ", "wordLimit": 2 },
+    { "id": 9, "part": 1, "kind": "text", "prompt": "Location: Wilby Street (quite near the …)", "wordLimit": 2 },
+    { "id": 10, "part": 1, "kind": "text", "prompt": "Near to restaurants and many … ", "wordLimit": 2 },
+    { "id": 11, "part": 2, "kind": "choice", "prompt": "Activities volunteers do (first)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 12, "part": 2, "kind": "choice", "prompt": "Activities volunteers do (second)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 13, "part": 2, "kind": "choice", "prompt": "Ways volunteers benefit (first)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 14, "part": 2, "kind": "choice", "prompt": "Ways volunteers benefit (second)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 15, "part": 2, "kind": "choice", "prompt": "Habib", "options": ["A", "B", "C", "D", "E", "F", "G"] },
+    { "id": 16, "part": 2, "kind": "choice", "prompt": "Consuela", "options": ["A", "B", "C", "D", "E", "F", "G"] },
+    { "id": 17, "part": 2, "kind": "choice", "prompt": "Minh", "options": ["A", "B", "C", "D", "E", "F", "G"] },
+    { "id": 18, "part": 2, "kind": "choice", "prompt": "Tanya", "options": ["A", "B", "C", "D", "E", "F", "G"] },
+    { "id": 19, "part": 2, "kind": "choice", "prompt": "Alexei", "options": ["A", "B", "C", "D", "E", "F", "G"] },
+    { "id": 20, "part": 2, "kind": "choice", "prompt": "Juba", "options": ["A", "B", "C", "D", "E", "F", "G"] },
+    { "id": 21, "part": 3, "kind": "text", "prompt": "The band consists of around … students", "wordLimit": 2 },
+    { "id": 22, "part": 3, "kind": "text", "prompt": "It is due to play in a … band competition", "wordLimit": 2 },
+    { "id": 23, "part": 3, "kind": "text", "prompt": "It has been invited to play in the town's … ", "wordLimit": 2 },
+    { "id": 24, "part": 3, "kind": "text", "prompt": "They have listened to a talk by a … ", "wordLimit": 2 },
+    { "id": 25, "part": 3, "kind": "text", "prompt": "Joe will discuss a … with the band", "wordLimit": 2 },
+    { "id": 26, "part": 3, "kind": "text", "prompt": "Joe hopes the band will attend a … next month", "wordLimit": 2 },
+    { "id": 27, "part": 3, "kind": "choice", "prompt": "flautist", "options": ["A", "B", "C", "D", "E", "F"] },
+    { "id": 28, "part": 3, "kind": "choice", "prompt": "trumpeter", "options": ["A", "B", "C", "D", "E", "F"] },
+    { "id": 29, "part": 3, "kind": "choice", "prompt": "trombonist", "options": ["A", "B", "C", "D", "E", "F"] },
+    { "id": 30, "part": 3, "kind": "choice", "prompt": "percussionist", "options": ["A", "B", "C", "D", "E", "F"] },
+    { "id": 31, "part": 4, "kind": "text", "prompt": "Liza Lim: studied piano and … before turning to composition", "wordLimit": 2 },
+    { "id": 32, "part": 4, "kind": "text", "prompt": "Her compositions show a great deal of … and are drawn from various cultural sources", "wordLimit": 2 },
+    { "id": 33, "part": 4, "kind": "text", "prompt": "Her music is very expressive and also … ", "wordLimit": 2 },
+    { "id": 34, "part": 4, "kind": "text", "prompt": "Festival will include her … called The Oresteia", "wordLimit": 2 },
+    { "id": 35, "part": 4, "kind": "text", "prompt": "Lim described the sounds in The Oresteia as … ", "wordLimit": 2 },
+    { "id": 36, "part": 4, "kind": "text", "prompt": "The Tower of Remoteness is performed by piano and … ", "wordLimit": 2 },
+    { "id": 37, "part": 4, "kind": "text", "prompt": "Ross Edwards' music celebrates Australia's cultural … ", "wordLimit": 2 },
+    { "id": 38, "part": 4, "kind": "text", "prompt": "Carl Vine: studied … before studying music", "wordLimit": 2 },
+    { "id": 39, "part": 4, "kind": "text", "prompt": "Became well known as composer of music for … ", "wordLimit": 2 },
+    { "id": 40, "part": 4, "kind": "text", "prompt": "Festival will include his music for the 1996 … ", "wordLimit": 2 }
+  ]
+}

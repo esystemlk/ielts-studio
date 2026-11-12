@@ -1,0 +1,102 @@
+/* IELTS Listening — audio player (extends reading-test.css + reading-runner.css). */
+
+.listening-player {
+  margin: 0.5rem 0 1.25rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid #ecdfe2;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #fff6f7, #ffffff);
+}
+.listening-player-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 800;
+  color: var(--ielts-midnight, #16203a);
+  margin-bottom: 0.75rem;
+}
+.listening-player-head svg { color: var(--ielts-crimson, #b3122f); }
+.listening-audio {
+  width: 100%;
+  height: 44px;
+}
+.listening-player-note {
+  margin-top: 0.6rem;
+  font-size: 0.78rem;
+  color: #8a7a7d;
+  line-height: 1.5;
+}
+
+/* On listening, the questions span the full width (there is no passage column). */
+.listening-test .listening-questions {
+  max-width: none;
+}
+
+/* ── Map / plan labelling — tap-able letter buttons ─────────────────────────── */
+.map-rows { display: grid; gap: 0.7rem; margin-top: 0.75rem; }
+.map-row {
+  padding: 0.65rem 0.8rem;
+  border: 1px solid #ecdfe2;
+  border-radius: 12px;
+  background: #fff;
+}
+.map-row-label { font-size: 0.95rem; color: #1f2430; margin-bottom: 0.5rem; }
+.map-row-label b { color: var(--ielts-crimson, #b3122f); margin-right: 0.3rem; }
+.map-letters { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.map-letter {
+  min-width: 2.25rem; height: 2.25rem; padding: 0 0.5rem;
+  border: 1.5px solid #d8c7cb; border-radius: 10px;
+  background: #fff; color: #1f2430; font-weight: 800; font-size: 0.95rem;
+  cursor: pointer; transition: all 0.12s ease;
+}
+.map-letter:hover:not(:disabled) { border-color: var(--ielts-crimson, #b3122f); }
+.map-letter.is-selected { background: var(--ielts-crimson, #b3122f); border-color: var(--ielts-crimson, #b3122f); color: #fff; }
+.map-letter.is-correct-letter { background: #e8f6ee; border-color: #37a46a; color: #1c7a44; }
+.map-letter.is-wrong-letter { background: #fdecec; border-color: #d64545; color: #b02525; text-decoration: line-through; }
+.map-letter:disabled { cursor: default; }
+
+/* ── Matching — drag-and-drop options box ───────────────────────────────────── */
+.listening-matchbox {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+@media (min-width: 820px) {
+  .listening-matchbox { grid-template-columns: 1.3fr 1fr; align-items: start; }
+}
+.matchbox-slots { display: grid; gap: 0.6rem; }
+.matchbox-row { }
+.matchbox-prompt {
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 0.5rem;
+  font-size: 0.95rem; color: #1f2430; margin-bottom: 0.35rem; line-height: 1.4;
+}
+.matchbox-prompt b { color: var(--ielts-crimson, #b3122f); margin-right: 0.3rem; }
+.matchbox-prompt button { background: none; border: none; color: #b9a7ab; cursor: pointer; padding: 2px; flex-shrink: 0; }
+.matchbox-prompt button[aria-pressed="true"] { color: var(--ielts-crimson, #b3122f); }
+.matchbox-drop {
+  min-height: 2.6rem; display: flex; align-items: center;
+  border: 1.5px dashed #cdbabf; border-radius: 10px;
+  padding: 0.35rem 0.6rem; background: #fffafb; cursor: pointer; transition: all 0.12s ease;
+}
+.matchbox-drop.is-armed { border-color: var(--ielts-crimson, #b3122f); background: #fff0f2; }
+.matchbox-drop.is-filled { border-style: solid; background: #fff; }
+.matchbox-drop.is-correct { border-color: #37a46a; background: #e8f6ee; }
+.matchbox-drop.is-wrong { border-color: #d64545; background: #fdecec; }
+.matchbox-placeholder { color: #a9969b; font-size: 0.85rem; font-style: italic; }
+.matchbox-chip { display: inline-flex; align-items: center; gap: 0.45rem; font-size: 0.92rem; color: #1f2430; }
+.matchbox-chip b { color: var(--ielts-crimson, #b3122f); }
+.matchbox-clear { margin-left: 0.3rem; border: none; background: #efe3e6; color: #86606a; width: 1.3rem; height: 1.3rem; border-radius: 50%; cursor: pointer; font-weight: 800; line-height: 1; }
+.matchbox-options {
+  display: grid; gap: 0.45rem; align-content: start;
+  padding: 0.75rem; border: 1px solid #ecdfe2; border-radius: 14px; background: #fcf6f7;
+  position: sticky; top: 0.5rem;
+}
+.matchbox-option {
+  text-align: left; padding: 0.55rem 0.7rem; border: 1.5px solid #e2d2d6; border-radius: 10px;
+  background: #fff; color: #1f2430; font-size: 0.9rem; line-height: 1.35; cursor: grab;
+}
+.matchbox-option:hover:not(:disabled) { border-color: var(--ielts-crimson, #b3122f); }
+.matchbox-option.is-picked { border-color: var(--ielts-crimson, #b3122f); background: #fff0f2; box-shadow: 0 0 0 2px #f6d6dd; }
+.matchbox-option b { color: var(--ielts-crimson, #b3122f); margin-right: 0.35rem; }
+.matchbox-option:disabled { cursor: default; opacity: 0.9; }

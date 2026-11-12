@@ -1,0 +1,47 @@
+import 'server-only';
+
+// Answer key for Cambridge IELTS 13 · Listening Test 4, transcribed from the
+// owner-supplied material. Matching is case/whitespace-insensitive and accepts
+// the listed variants (see ielts-reading/grading.ts).
+export const answerKey: Record<string, string[]> = {
+  "1": ["Finance"],
+  "2": ["Maths", "Math"],
+  "3": ["business"],
+  "4": ["17", "seventeen"],
+  "5": ["holiday"],
+  "6": ["college"],
+  "7": ["location"],
+  "8": ["jeans"],
+  "9": ["late"],
+  "10": ["smile"],
+  "11": ["A"],
+  "12": ["B"],
+  "13": ["A"],
+  "14": ["C"],
+  "15": ["A"],
+  "16": ["B"],
+  "17": ["B"],
+  "18": ["D"],
+  "19": ["A"],
+  "20": ["E"],
+  "21": ["A"],
+  "22": ["A"],
+  "23": ["C"],
+  "24": ["C"],
+  "25": ["B"],
+  "26": ["A"],
+  "27": ["B", "C"],
+  "28": ["B", "C"],
+  "29": ["D", "E"],
+  "30": ["D", "E"],
+  "31": ["destruction"],
+  "32": ["universities"],
+  "33": ["political"],
+  "34": ["port", "ports"],
+  "35": ["slaves", "slavery"],
+  "36": ["taxation"],
+  "37": ["sugar"],
+  "38": ["tea"],
+  "39": ["transportation"],
+  "40": ["night"]
+};

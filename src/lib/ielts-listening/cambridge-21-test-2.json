@@ -1,0 +1,79 @@
+{
+  "id": "cambridge-21-test-2",
+  "title": "Cambridge IELTS 21 · Listening Test 2",
+  "version": 1,
+  "endpoint": "/api/ielts-listening/cambridge-21-test-2",
+  "sections": [
+    { "part": 1, "title": "Part 1", "subtitle": "One-day courses", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-21%2Ftest-2%2Fpart-1.mp3?alt=media" },
+    { "part": 2, "title": "Part 2", "subtitle": "History & nature walks · Melby Coal Mine", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-21%2Ftest-2%2Fpart-2.mp3?alt=media" },
+    { "part": 3, "title": "Part 3", "subtitle": "Food science course feedback", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-21%2Ftest-2%2Fpart-3.mp3?alt=media" },
+    { "part": 4, "title": "Part 4", "subtitle": "Challenges facing the cruise ship industry", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-21%2Ftest-2%2Fpart-4.mp3?alt=media" }
+  ],
+  "groups": {
+    "1": { "title": "Questions 1–10 · Table completion", "instructions": "Complete the table below (one-day courses). Write ONE WORD AND/OR A NUMBER for each answer." },
+    "11": { "title": "Questions 11–12 · Choose TWO letters", "instructions": "Which TWO pieces of advice are given about the Marsden Coastal Walk? Choose TWO letters, A–E.  A: Stop for lunch in an ancient town. · B: Don't miss the ruins of a certain building. · C: Catch a boat to the start of this walk. · D: Be careful of the steep and rocky paths. · E: Don't worry about getting lost." },
+    "13": { "title": "Questions 13–14 · Choose TWO letters", "instructions": "Which TWO things are said about the Melby Heritage Walk? Choose TWO letters, A–E.  A: This walk is mostly downhill. · B: The paths can get busy during the day. · C: This is a circular walk. · D: A tower stands on the site of an older structure. · E: There are far-reaching views the whole way." },
+    "15": { "title": "Questions 15–20 · Map labelling", "instructions": "Label the map of Melby Coal Mine below. Drag the correct letter, A–I, onto each question — or tap a question, then tap a letter." },
+    "21": { "title": "Questions 21–22 · Choose TWO letters", "instructions": "Which TWO facts in the sessions on food safety were new information for Nadia and Fergus? Choose TWO letters, A–E.  A: the amount of plastic in the ocean · B: the number of diseases caused by contaminated food · C: the amount of food that is wasted · D: the number of people who are obese · E: the result of treating animals with antibiotics." },
+    "23": { "title": "Questions 23–24 · Choose TWO letters", "instructions": "Which TWO features of a project aiming to prevent food fraud impressed Fergus? Choose TWO letters, A–E.  A: the new technology it used · B: the publicity it received · C: the use of multiple tests on food items · D: the variety of dietary requirements included · E: the way information was made widely accessible." },
+    "25": { "title": "Questions 25–26 · Choose TWO letters", "instructions": "Which TWO topics do both students recommend should be included in the course? Choose TWO letters, A–E.  A: sustainable fishing · B: targeted nutrition · C: global differences in consumption · D: sustainable agriculture · E: digital technology and food." },
+    "27": {
+      "title": "Questions 27–30 · Flow-chart completion",
+      "instructions": "Complete the flow-chart (Student project: developing a new food product). Choose FOUR answers from the box and drag the correct letter, A–F, onto each stage — or tap a stage, then tap an option.",
+      "matchOptions": [
+        { "letter": "A", "text": "This was challenging but enjoyable." },
+        { "letter": "B", "text": "This led to some disagreement." },
+        { "letter": "C", "text": "This was easy to decide on." },
+        { "letter": "D", "text": "This was helped by the guidelines provided." },
+        { "letter": "E", "text": "This seemed like an unnecessary stage." },
+        { "letter": "F", "text": "This involved selecting a new ingredient." }
+      ]
+    },
+    "31": { "title": "Questions 31–40 · Note completion", "instructions": "Complete the notes below (Challenges facing the cruise ship industry). Write ONE WORD ONLY for each answer." }
+  },
+  "blocks": [
+    { "type": "map", "startId": 15, "endId": 20, "image": "/images/ielts/listening/cambridge-21-test-2-map.png", "alt": "Map of Melby Coal Mine with the engine house, main visitor centre, ticket office, car park, covered walkways and lettered buildings A to I." }
+  ],
+  "questions": [
+    { "id": 1, "part": 1, "kind": "text", "prompt": "Vietnamese food: Date — … ", "wordLimit": 2 },
+    { "id": 2, "part": 1, "kind": "text", "prompt": "Bread making: Cost — £ … (plus extra charge for ingredients)", "wordLimit": 2 },
+    { "id": 3, "part": 1, "kind": "text", "prompt": "Bread making: participants make white bread, sourdough and … ", "wordLimit": 2 },
+    { "id": 4, "part": 1, "kind": "text", "prompt": "Face massage: the teacher trained in … ", "wordLimit": 2 },
+    { "id": 5, "part": 1, "kind": "text", "prompt": "Face massage: bring a … ", "wordLimit": 2 },
+    { "id": 6, "part": 1, "kind": "text", "prompt": "Candle making: Date — … ", "wordLimit": 2 },
+    { "id": 7, "part": 1, "kind": "text", "prompt": "Candle making: only … ingredients are used", "wordLimit": 2 },
+    { "id": 8, "part": 1, "kind": "text", "prompt": "Silk painting: Cost — £ … ", "wordLimit": 2 },
+    { "id": 9, "part": 1, "kind": "text", "prompt": "Silk painting: bring an apron or old … ", "wordLimit": 2 },
+    { "id": 10, "part": 1, "kind": "text", "prompt": "DIY for beginners: learn to use a drill, saw and … ", "wordLimit": 2 },
+    { "id": 11, "part": 2, "kind": "choice", "prompt": "Advice about the Marsden Coastal Walk (first)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 12, "part": 2, "kind": "choice", "prompt": "Advice about the Marsden Coastal Walk (second)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 13, "part": 2, "kind": "choice", "prompt": "About the Melby Heritage Walk (first)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 14, "part": 2, "kind": "choice", "prompt": "About the Melby Heritage Walk (second)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 15, "part": 2, "kind": "choice", "prompt": "Exhibition", "options": ["A", "B", "C", "D", "E", "F", "G", "H", "I"] },
+    { "id": 16, "part": 2, "kind": "choice", "prompt": "Baths", "options": ["A", "B", "C", "D", "E", "F", "G", "H", "I"] },
+    { "id": 17, "part": 2, "kind": "choice", "prompt": "Tools", "options": ["A", "B", "C", "D", "E", "F", "G", "H", "I"] },
+    { "id": 18, "part": 2, "kind": "choice", "prompt": "Vehicles", "options": ["A", "B", "C", "D", "E", "F", "G", "H", "I"] },
+    { "id": 19, "part": 2, "kind": "choice", "prompt": "Ponies", "options": ["A", "B", "C", "D", "E", "F", "G", "H", "I"] },
+    { "id": 20, "part": 2, "kind": "choice", "prompt": "Education centre", "options": ["A", "B", "C", "D", "E", "F", "G", "H", "I"] },
+    { "id": 21, "part": 3, "kind": "choice", "prompt": "New information about food safety (first)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 22, "part": 3, "kind": "choice", "prompt": "New information about food safety (second)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 23, "part": 3, "kind": "choice", "prompt": "Features of the food-fraud project that impressed Fergus (first)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 24, "part": 3, "kind": "choice", "prompt": "Features of the food-fraud project that impressed Fergus (second)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 25, "part": 3, "kind": "choice", "prompt": "Topics both students recommend including (first)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 26, "part": 3, "kind": "choice", "prompt": "Topics both students recommend including (second)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 27, "part": 3, "kind": "choice", "prompt": "Initial aim", "options": ["A", "B", "C", "D", "E", "F"] },
+    { "id": 28, "part": 3, "kind": "choice", "prompt": "Literature review", "options": ["A", "B", "C", "D", "E", "F"] },
+    { "id": 29, "part": 3, "kind": "choice", "prompt": "Product development", "options": ["A", "B", "C", "D", "E", "F"] },
+    { "id": 30, "part": 3, "kind": "choice", "prompt": "Product production", "options": ["A", "B", "C", "D", "E", "F"] },
+    { "id": 31, "part": 4, "kind": "text", "prompt": "Overtourism: … is one of the worst problems", "wordLimit": 1 },
+    { "id": 32, "part": 4, "kind": "text", "prompt": "A tourist … is being introduced in some cities (e.g. Barcelona)", "wordLimit": 1 },
+    { "id": 33, "part": 4, "kind": "text", "prompt": "Bruges: shops were only stocking … and souvenirs", "wordLimit": 1 },
+    { "id": 34, "part": 4, "kind": "text", "prompt": "Dubrovnik: limits tourists by managing the … of cruise ship arrivals", "wordLimit": 1 },
+    { "id": 35, "part": 4, "kind": "text", "prompt": "There is an assumption about the … of cruises", "wordLimit": 1 },
+    { "id": 36, "part": 4, "kind": "text", "prompt": "People think there may be too many … ", "wordLimit": 1 },
+    { "id": 37, "part": 4, "kind": "text", "prompt": "Activities e.g. boxing, … and well-being programmes", "wordLimit": 1 },
+    { "id": 38, "part": 4, "kind": "text", "prompt": "Offering a diverse selection of food including … ", "wordLimit": 1 },
+    { "id": 39, "part": 4, "kind": "text", "prompt": "Providing reliable … ", "wordLimit": 1 },
+    { "id": 40, "part": 4, "kind": "text", "prompt": "Improving marketing on social media with high quality … ", "wordLimit": 1 }
+  ]
+}

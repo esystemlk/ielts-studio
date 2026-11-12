@@ -1,0 +1,74 @@
+{
+  "id": "cambridge-15-test-4",
+  "title": "Cambridge IELTS 15 · Listening Test 4",
+  "version": 1,
+  "endpoint": "/api/ielts-listening/cambridge-15-test-4",
+  "sections": [
+    { "part": 1, "title": "Part 1", "subtitle": "Customer satisfaction survey", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-15%2Ftest-4%2Fpart-1.mp3?alt=media" },
+    { "part": 2, "title": "Part 2", "subtitle": "Croft Valley Park", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-15%2Ftest-4%2Fpart-2.mp3?alt=media" },
+    { "part": 3, "title": "Part 3", "subtitle": "Presentation about refrigeration", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-15%2Ftest-4%2Fpart-3.mp3?alt=media" },
+    { "part": 4, "title": "Part 4", "subtitle": "The Industrial Revolution in Britain", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-15%2Ftest-4%2Fpart-4.mp3?alt=media" }
+  ],
+  "groups": {
+    "1": { "title": "Questions 1–10 · Form completion", "instructions": "Complete the form below (Customer Satisfaction Survey). Write ONE WORD AND/OR A NUMBER for each answer.  Example: Name — Sophie Bird." },
+    "11": { "title": "Questions 11–16 · Map labelling", "instructions": "Label the map of Croft Valley Park below. Drag the correct letter, A–H, onto each question — or tap a question, then tap a letter." },
+    "17": { "title": "Questions 17–18 · Choose TWO letters", "instructions": "What does the speaker say about the adventure playground? Choose TWO letters, A–E.  A: Children must be supervised. · B: It costs more in winter. · C: Some activities are only for younger children. · D: No payment is required. · E: It was recently expanded." },
+    "19": { "title": "Questions 19–20 · Choose TWO letters", "instructions": "What does the speaker say about the glass houses? Choose TWO letters, A–E.  A: They are closed at weekends. · B: Volunteers are needed to work there. · C: They were badly damaged by fire. · D: More money is needed to repair some of the glass. · E: Visitors can see palm trees from tropical regions." },
+    "21": { "title": "Questions 21–24 · Multiple choice", "instructions": "Choose the correct letter, A, B or C. (Presentation about refrigeration)" },
+    "25": {
+      "title": "Questions 25–30 · Matching",
+      "instructions": "Who is going to do research into each topic? Drag the correct letter, A, B or C, onto each topic — or tap a topic, then tap an option.",
+      "matchOptions": [
+        { "letter": "A", "text": "Annie" },
+        { "letter": "B", "text": "Jack" },
+        { "letter": "C", "text": "both Annie and Jack" }
+      ]
+    },
+    "31": { "title": "Questions 31–40 · Note completion", "instructions": "Complete the notes below (How the Industrial Revolution affected life in Britain). Write ONE WORD ONLY for each answer." }
+  },
+  "blocks": [
+    { "type": "map", "startId": 11, "endId": 16, "image": "/images/ielts/listening/cambridge-15-test-4-map.png", "alt": "Map of Croft Valley Park with north and south gates, a central lake, the old museum, adventure playground, glass houses, and lettered locations A to H." }
+  ],
+  "questions": [
+    { "id": 1, "part": 1, "kind": "text", "prompt": "Occupation: … ", "wordLimit": 2 },
+    { "id": 2, "part": 1, "kind": "text", "prompt": "Reason for travel today: … ", "wordLimit": 2 },
+    { "id": 3, "part": 1, "kind": "text", "prompt": "Name of station returning to: … ", "wordLimit": 2 },
+    { "id": 4, "part": 1, "kind": "text", "prompt": "Type of ticket purchased: a … ticket", "wordLimit": 2 },
+    { "id": 5, "part": 1, "kind": "text", "prompt": "Cost of ticket: £ … ", "wordLimit": 2 },
+    { "id": 6, "part": 1, "kind": "text", "prompt": "Where ticket was bought: … (an e-ticket)", "wordLimit": 2 },
+    { "id": 7, "part": 1, "kind": "text", "prompt": "Least satisfied with journey: the … this morning", "wordLimit": 2 },
+    { "id": 8, "part": 1, "kind": "text", "prompt": "Most satisfied with station facilities: how much … was provided", "wordLimit": 2 },
+    { "id": 9, "part": 1, "kind": "text", "prompt": "Least satisfied with: lack of seats, particularly on the … ", "wordLimit": 2 },
+    { "id": 10, "part": 1, "kind": "text", "prompt": "Neither satisfied nor dissatisfied with: the … available", "wordLimit": 2 },
+    { "id": 11, "part": 2, "kind": "choice", "prompt": "café", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 12, "part": 2, "kind": "choice", "prompt": "toilets", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 13, "part": 2, "kind": "choice", "prompt": "formal gardens", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 14, "part": 2, "kind": "choice", "prompt": "outdoor gym", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 15, "part": 2, "kind": "choice", "prompt": "skateboard ramp", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 16, "part": 2, "kind": "choice", "prompt": "wild flowers", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 17, "part": 2, "kind": "choice", "prompt": "About the adventure playground (first)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 18, "part": 2, "kind": "choice", "prompt": "About the adventure playground (second)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 19, "part": 2, "kind": "choice", "prompt": "About the glass houses (first)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 20, "part": 2, "kind": "choice", "prompt": "About the glass houses (second)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 21, "part": 3, "kind": "choice", "prompt": "What did Annie discover from reading about icehouses?", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "why they were first created" }, { "letter": "B", "text": "how the ice was kept frozen" }, { "letter": "C", "text": "where they were located" }] },
+    { "id": 22, "part": 3, "kind": "choice", "prompt": "What point does Annie make about refrigeration in ancient Rome?", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "It became a commercial business." }, { "letter": "B", "text": "It used snow from nearby." }, { "letter": "C", "text": "It took a long time to become popular." }] },
+    { "id": 23, "part": 3, "kind": "choice", "prompt": "In connection with modern refrigerators, both Annie and Jack are worried about", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "the complexity of the technology." }, { "letter": "B", "text": "the fact that some are disposed of irresponsibly." }, { "letter": "C", "text": "the large number that quickly break down." }] },
+    { "id": 24, "part": 3, "kind": "choice", "prompt": "What do Jack and Annie agree regarding domestic fridges?", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "They are generally good value for money." }, { "letter": "B", "text": "There are plenty of useful variations." }, { "letter": "C", "text": "They are more useful than other domestic appliances." }] },
+    { "id": 25, "part": 3, "kind": "choice", "prompt": "the goods that are refrigerated", "options": ["A", "B", "C"] },
+    { "id": 26, "part": 3, "kind": "choice", "prompt": "the effects on health", "options": ["A", "B", "C"] },
+    { "id": 27, "part": 3, "kind": "choice", "prompt": "the impact on food producers", "options": ["A", "B", "C"] },
+    { "id": 28, "part": 3, "kind": "choice", "prompt": "the impact on cities", "options": ["A", "B", "C"] },
+    { "id": 29, "part": 3, "kind": "choice", "prompt": "refrigerated transport", "options": ["A", "B", "C"] },
+    { "id": 30, "part": 3, "kind": "choice", "prompt": "domestic fridges", "options": ["A", "B", "C"] },
+    { "id": 31, "part": 4, "kind": "text", "prompt": "People's possessions were used to measure Britain's … ", "wordLimit": 1 },
+    { "id": 32, "part": 4, "kind": "text", "prompt": "Developments in production of goods and in … greatly changed lives", "wordLimit": 1 },
+    { "id": 33, "part": 4, "kind": "text", "prompt": "Manufacturing: it needed the new types of … that were used then", "wordLimit": 1 },
+    { "id": 34, "part": 4, "kind": "text", "prompt": "The leading industry was … ", "wordLimit": 1 },
+    { "id": 35, "part": 4, "kind": "text", "prompt": "New … made factories necessary, so more people moved into towns", "wordLimit": 1 },
+    { "id": 36, "part": 4, "kind": "text", "prompt": "Transport: greater access to … made people more aware of what they could buy", "wordLimit": 1 },
+    { "id": 37, "part": 4, "kind": "text", "prompt": "When shopping, people were not limited to buying … goods", "wordLimit": 1 },
+    { "id": 38, "part": 4, "kind": "text", "prompt": "Retailing: goods more visible inside stores because of better … ", "wordLimit": 1 },
+    { "id": 39, "part": 4, "kind": "text", "prompt": "Goods more visible outside stores because … were bigger", "wordLimit": 1 },
+    { "id": 40, "part": 4, "kind": "text", "prompt": "… that was persuasive became much more common", "wordLimit": 1 }
+  ]
+}

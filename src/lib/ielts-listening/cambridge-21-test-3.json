@@ -1,0 +1,89 @@
+{
+  "id": "cambridge-21-test-3",
+  "title": "Cambridge IELTS 21 · Listening Test 3",
+  "version": 1,
+  "endpoint": "/api/ielts-listening/cambridge-21-test-3",
+  "sections": [
+    { "part": 1, "title": "Part 1", "subtitle": "Ferry to the Shetland Islands", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-21%2Ftest-3%2Fpart-1.mp3?alt=media" },
+    { "part": 2, "title": "Part 2", "subtitle": "Starting a street food business", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-21%2Ftest-3%2Fpart-2.mp3?alt=media" },
+    { "part": 3, "title": "Part 3", "subtitle": "Sustainable fashion project", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-21%2Ftest-3%2Fpart-3.mp3?alt=media" },
+    { "part": 4, "title": "Part 4", "subtitle": "Invasive species", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-21%2Ftest-3%2Fpart-4.mp3?alt=media" }
+  ],
+  "groups": {
+    "1": { "title": "Questions 1–10 · Note completion", "instructions": "Complete the notes below (Ferry to Shetland Islands). Write ONE WORD AND/OR A NUMBER for each answer." },
+    "11": { "title": "Questions 11–12 · Choose TWO letters", "instructions": "Which TWO explanations for the popularity of street food are given? Choose TWO letters, A–E.  A: low price · B: locally sourced · C: freshly made · D: convenience · E: unusual food." },
+    "13": { "title": "Questions 13–14 · Choose TWO letters", "instructions": "Which TWO places are recommended for new street food businesses? Choose TWO letters, A–E.  A: music festivals · B: food markets · C: weddings · D: parties · E: parks." },
+    "15": { "title": "Questions 15–16 · Multiple choice", "instructions": "Choose the correct letter, A, B or C. (Starting a street food business)" },
+    "17": {
+      "title": "Questions 17–20 · Matching",
+      "instructions": "What problem did the owners of each of the following street food businesses experience? Choose FOUR answers from the box and drag the correct letter, A–F, onto each business — or tap a business, then tap an option.",
+      "matchOptions": [
+        { "letter": "A", "text": "Some ingredients were too expensive." },
+        { "letter": "B", "text": "The meals took a long time to prepare." },
+        { "letter": "C", "text": "They had no money for marketing." },
+        { "letter": "D", "text": "It was difficult to get a permit to sell food." },
+        { "letter": "E", "text": "A competitor was selling similar food in their area." },
+        { "letter": "F", "text": "They worked very long hours." }
+      ]
+    },
+    "21": { "title": "Questions 21–22 · Choose TWO letters", "instructions": "Which TWO points do the speakers make about the terms 'ethical' and 'sustainable' fashion? Choose TWO letters, A–E.  A: Their definitions keep changing. · B: People think they mean the same thing. · C: The term 'eco-friendly' is preferable. · D: They are often used imprecisely. · E: Companies should avoid using them on clothing labels." },
+    "23": { "title": "Questions 23–24 · Choose TWO letters", "instructions": "Which TWO claims about wool production do the speakers disagree with? Choose TWO letters, A–E.  A: Sheep are generally well-treated. · B: Wool is easy to recycle. · C: Wool is a long-lasting fabric. · D: Wool production involves few chemicals. · E: Sheep do less environmental damage than other livestock." },
+    "25": {
+      "title": "Questions 25–30 · Matching",
+      "instructions": "What comment do the speakers make about each of the following semi-synthetic fabrics? Choose SIX answers from the box and drag the correct letter, A–H, onto each fabric — or tap a fabric, then tap an option.",
+      "matchOptions": [
+        { "letter": "A", "text": "The production process is fuel efficient." },
+        { "letter": "B", "text": "It is the least sustainable of alternative fabrics." },
+        { "letter": "C", "text": "Production costs are high." },
+        { "letter": "D", "text": "It provides additional health benefits." },
+        { "letter": "E", "text": "It is not durable in the long-term." },
+        { "letter": "F", "text": "It needs to be produced in a certain way to be sustainable." },
+        { "letter": "G", "text": "Chemicals required for production can be reused." },
+        { "letter": "H", "text": "This is from a wholly sustainable source." }
+      ]
+    },
+    "31": { "title": "Questions 31–40 · Note completion", "instructions": "Complete the notes below (Invasive species). Write ONE WORD ONLY for each answer." }
+  },
+  "questions": [
+    { "id": 1, "part": 1, "kind": "text", "prompt": "Name of ferry company: … Ferries", "wordLimit": 2 },
+    { "id": 2, "part": 1, "kind": "text", "prompt": "Ferries depart seven times per … in summer", "wordLimit": 2 },
+    { "id": 3, "part": 1, "kind": "text", "prompt": "Cost for four people with car: a little less than £ … ", "wordLimit": 2 },
+    { "id": 4, "part": 1, "kind": "text", "prompt": "Cancellation policy: receive a … (if cancelled a month in advance)", "wordLimit": 2 },
+    { "id": 5, "part": 1, "kind": "text", "prompt": "Cabins: book one with a … ", "wordLimit": 2 },
+    { "id": 6, "part": 1, "kind": "text", "prompt": "Bring snacks and … for the children", "wordLimit": 2 },
+    { "id": 7, "part": 1, "kind": "text", "prompt": "A … is required for the dog kennels", "wordLimit": 2 },
+    { "id": 8, "part": 1, "kind": "text", "prompt": "Try to see … ", "wordLimit": 2 },
+    { "id": 9, "part": 1, "kind": "text", "prompt": "If time, visit … Castle in the morning", "wordLimit": 2 },
+    { "id": 10, "part": 1, "kind": "text", "prompt": "The … restaurant in a nearby village is recommended", "wordLimit": 2 },
+    { "id": 11, "part": 2, "kind": "choice", "prompt": "Explanations for the popularity of street food (first)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 12, "part": 2, "kind": "choice", "prompt": "Explanations for the popularity of street food (second)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 13, "part": 2, "kind": "choice", "prompt": "Places recommended for new street food businesses (first)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 14, "part": 2, "kind": "choice", "prompt": "Places recommended for new street food businesses (second)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 15, "part": 2, "kind": "choice", "prompt": "What does the speaker say about getting equipment for a street food business?", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "High quality equipment is a good investment." }, { "letter": "B", "text": "It's best to buy second-hand equipment." }, { "letter": "C", "text": "Renting equipment can be cheap." }] },
+    { "id": 16, "part": 2, "kind": "choice", "prompt": "What advice is given about creating a product for a street food business?", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "Provide information about the ingredients." }, { "letter": "B", "text": "It is important to have an original product." }, { "letter": "C", "text": "The presentation is an important factor." }] },
+    { "id": 17, "part": 2, "kind": "choice", "prompt": "Thai Basil", "options": ["A", "B", "C", "D", "E", "F"] },
+    { "id": 18, "part": 2, "kind": "choice", "prompt": "Basque", "options": ["A", "B", "C", "D", "E", "F"] },
+    { "id": 19, "part": 2, "kind": "choice", "prompt": "Lou's kitchen", "options": ["A", "B", "C", "D", "E", "F"] },
+    { "id": 20, "part": 2, "kind": "choice", "prompt": "Chip Chop", "options": ["A", "B", "C", "D", "E", "F"] },
+    { "id": 21, "part": 3, "kind": "choice", "prompt": "Points about 'ethical' and 'sustainable' fashion (first)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 22, "part": 3, "kind": "choice", "prompt": "Points about 'ethical' and 'sustainable' fashion (second)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 23, "part": 3, "kind": "choice", "prompt": "Claims about wool production the speakers disagree with (first)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 24, "part": 3, "kind": "choice", "prompt": "Claims about wool production the speakers disagree with (second)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 25, "part": 3, "kind": "choice", "prompt": "Lyocell", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 26, "part": 3, "kind": "choice", "prompt": "Cupro", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 27, "part": 3, "kind": "choice", "prompt": "Bamboo", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 28, "part": 3, "kind": "choice", "prompt": "EcoVero", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 29, "part": 3, "kind": "choice", "prompt": "Cork", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 30, "part": 3, "kind": "choice", "prompt": "Hemp", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 31, "part": 4, "kind": "text", "prompt": "An invasive species can be a problem when it introduces a new … ", "wordLimit": 1 },
+    { "id": 32, "part": 4, "kind": "text", "prompt": "… when it threatens an entire … ", "wordLimit": 1 },
+    { "id": 33, "part": 4, "kind": "text", "prompt": "Spread accidentally, e.g. via people returning from their … ", "wordLimit": 1 },
+    { "id": 34, "part": 4, "kind": "text", "prompt": "Spread intentionally, e.g. for pest control, or as … ", "wordLimit": 1 },
+    { "id": 35, "part": 4, "kind": "text", "prompt": "Toads were introduced to eat an insect damaging the … plantations", "wordLimit": 1 },
+    { "id": 36, "part": 4, "kind": "text", "prompt": "Rhododendron plants prevent … from reaching native plants", "wordLimit": 1 },
+    { "id": 37, "part": 4, "kind": "text", "prompt": "Grey squirrels spread a … that kills red squirrels", "wordLimit": 1 },
+    { "id": 38, "part": 4, "kind": "text", "prompt": "Monitoring helps us understand the … of invasive species", "wordLimit": 1 },
+    { "id": 39, "part": 4, "kind": "text", "prompt": "Setting up a national … makes it easier to track them", "wordLimit": 1 },
+    { "id": 40, "part": 4, "kind": "text", "prompt": "Asking the public to … and report them helps with monitoring", "wordLimit": 1 }
+  ]
+}

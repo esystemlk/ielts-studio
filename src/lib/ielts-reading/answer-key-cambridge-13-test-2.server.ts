@@ -1,0 +1,47 @@
+import 'server-only';
+
+// Answer key for Cambridge IELTS 13 · Academic Reading Test 2, transcribed from
+// the owner-supplied material. Matching is case/whitespace-insensitive and
+// accepts the listed variants (see grading.ts).
+export const answerKey: Record<string, string[]> = {
+  "1": ["oils"],
+  "2": ["friendship"],
+  "3": ["funerals"],
+  "4": ["wealth"],
+  "5": ["indigestion"],
+  "6": ["India"],
+  "7": ["camels"],
+  "8": ["Alexandria"],
+  "9": ["Venice"],
+  "10": ["TRUE"],
+  "11": ["FALSE"],
+  "12": ["NOT GIVEN"],
+  "13": ["FALSE"],
+  "14": ["B"],
+  "15": ["F"],
+  "16": ["B"],
+  "17": ["E"],
+  "18": ["A"],
+  "19": ["B"],
+  "20": ["C"],
+  "21": ["animals"],
+  "22": ["childbirth"],
+  "23": ["placebo"],
+  "24": ["game"],
+  "25": ["strangers"],
+  "26": ["names"],
+  "27": ["D"],
+  "28": ["C"],
+  "29": ["A"],
+  "30": ["D"],
+  "31": ["D"],
+  "32": ["D"],
+  "33": ["C"],
+  "34": ["B"],
+  "35": ["A"],
+  "36": ["C"],
+  "37": ["A"],
+  "38": ["B"],
+  "39": ["C"],
+  "40": ["D"]
+};

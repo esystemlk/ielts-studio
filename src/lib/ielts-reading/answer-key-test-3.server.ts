@@ -1,0 +1,47 @@
+import 'server-only';
+
+// Answer key for Cambridge IELTS 11 · Academic Reading Test 3, transcribed from
+// the owner-supplied material. Matching is case/whitespace-insensitive and
+// accepts the listed variants (see grading.ts).
+export const answerKey: Record<string, string[]> = {
+  "1": ["tea"],
+  "2": ["reel"],
+  "3": ["women"],
+  "4": ["royalty"],
+  "5": ["currency"],
+  "6": ["paper"],
+  "7": ["wool"],
+  "8": ["monks"],
+  "9": ["nylon"],
+  "10": ["FALSE"],
+  "11": ["TRUE"],
+  "12": ["FALSE"],
+  "13": ["NOT GIVEN"],
+  "14": ["FALSE"],
+  "15": ["TRUE"],
+  "16": ["NOT GIVEN"],
+  "17": ["TRUE"],
+  "18": ["FALSE"],
+  "19": ["G"],
+  "20": ["C"],
+  "21": ["A"],
+  "22": ["E"],
+  "23": ["speed"],
+  "24": ["plains"],
+  "25": ["bottlenecks"],
+  "26": ["corridor", "passageway"],
+  "27": ["D"],
+  "28": ["B"],
+  "29": ["G"],
+  "30": ["C"],
+  "31": ["B"],
+  "32": ["E"],
+  "33": ["A"],
+  "34": ["F"],
+  "35": ["beginner"],
+  "36": ["arithmetic"],
+  "37": ["intuitive"],
+  "38": ["scientists"],
+  "39": ["experiments"],
+  "40": ["theorems"]
+};

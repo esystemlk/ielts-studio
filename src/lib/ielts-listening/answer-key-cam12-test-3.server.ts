@@ -1,0 +1,47 @@
+import 'server-only';
+
+// Answer key for Cambridge IELTS 12 · Listening Test 3, transcribed from the
+// owner-supplied material. Matching is case/whitespace-insensitive and accepts
+// the listed variants (see ielts-reading/grading.ts).
+export const answerKey: Record<string, string[]> = {
+  "1": ["travel", "traveling", "travelling"],
+  "2": ["history"],
+  "3": ["study"],
+  "4": ["teenagers"],
+  "5": ["kitchen"],
+  "6": ["crime"],
+  "7": ["appointment"],
+  "8": ["sugar"],
+  "9": ["stamps"],
+  "10": ["parking"],
+  "11": ["D", "E"],
+  "12": ["D", "E"],
+  "13": ["A", "C"],
+  "14": ["A", "C"],
+  "15": ["C"],
+  "16": ["B"],
+  "17": ["A"],
+  "18": ["stress"],
+  "19": ["weight"],
+  "20": ["families"],
+  "21": ["C"],
+  "22": ["E"],
+  "23": ["H"],
+  "24": ["B"],
+  "25": ["A"],
+  "26": ["F"],
+  "27": ["A"],
+  "28": ["C"],
+  "29": ["B"],
+  "30": ["B"],
+  "31": ["insects"],
+  "32": ["behaviour", "behavior"],
+  "33": ["father"],
+  "34": ["complex"],
+  "35": ["reproduction"],
+  "36": ["control"],
+  "37": ["duck", "ducks"],
+  "38": ["language"],
+  "39": ["food"],
+  "40": ["cost", "costs"]
+};

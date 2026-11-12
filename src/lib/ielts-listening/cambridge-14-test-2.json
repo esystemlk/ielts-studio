@@ -1,0 +1,78 @@
+{
+  "id": "cambridge-14-test-2",
+  "title": "Cambridge IELTS 14 · Listening Test 2",
+  "version": 1,
+  "endpoint": "/api/ielts-listening/cambridge-14-test-2",
+  "sections": [
+    { "part": 1, "title": "Part 1", "subtitle": "Total Health Clinic", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-14%2Ftest-2%2Fpart-1.mp3?alt=media" },
+    { "part": 2, "title": "Part 2", "subtitle": "Visit to Branley Castle", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-14%2Ftest-2%2Fpart-2.m4a?alt=media" },
+    { "part": 3, "title": "Part 3", "subtitle": "Woolly mammoths on St Paul's Island", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-14%2Ftest-2%2Fpart-3.m4a?alt=media" },
+    { "part": 4, "title": "Part 4", "subtitle": "The history of weather forecasting", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-14%2Ftest-2%2Fpart-4.m4a?alt=media" }
+  ],
+  "groups": {
+    "1": { "title": "Questions 1–10 · Note completion", "instructions": "Complete the notes below (Total Health Clinic — Patient Details). Write ONE WORD AND/OR A NUMBER for each answer.  Example: Name — Julie Anne Garcia." },
+    "11": { "title": "Questions 11–15 · Multiple choice", "instructions": "Choose the correct letter, A, B or C. (Visit to Branley Castle)" },
+    "16": { "title": "Questions 16–20 · Plan labelling", "instructions": "Label the plan of Branley Castle below. Drag the correct letter, A–H, onto each question — or tap a question, then tap a letter." },
+    "21": { "title": "Questions 21–24 · Multiple choice", "instructions": "Choose the correct letter, A, B or C. (Woolly mammoths on St Paul's Island)" },
+    "25": {
+      "title": "Questions 25–30 · Matching",
+      "instructions": "What action will the students take for each of the following sections of their presentation? Choose SIX answers from the box and drag the correct letter, A–H, onto each section — or tap a section, then tap an action.",
+      "matchOptions": [
+        { "letter": "A", "text": "make it more interactive" },
+        { "letter": "B", "text": "reduce visual input" },
+        { "letter": "C", "text": "add personal opinions" },
+        { "letter": "D", "text": "contact one of the researchers" },
+        { "letter": "E", "text": "make detailed notes" },
+        { "letter": "F", "text": "find information online" },
+        { "letter": "G", "text": "check timing" },
+        { "letter": "H", "text": "organise the content more clearly" }
+      ]
+    },
+    "31": { "title": "Questions 31–40 · Note completion", "instructions": "Complete the notes below (The history of weather forecasting). Write ONE WORD ONLY for each answer." }
+  },
+  "blocks": [
+    { "type": "map", "startId": 16, "endId": 20, "image": "/images/ielts/listening/cambridge-14-test-2-map.png", "alt": "Plan of Branley Castle showing four towers joined by a wall, the main entrance, south and north gates, a bridge, a path and lettered locations A to H." }
+  ],
+  "questions": [
+    { "id": 1, "part": 1, "kind": "text", "prompt": "Contact phone: …", "wordLimit": 3 },
+    { "id": 2, "part": 1, "kind": "text", "prompt": "Date of birth: … , 1992", "wordLimit": 2 },
+    { "id": 3, "part": 1, "kind": "text", "prompt": "Occupation: works as a …", "wordLimit": 2 },
+    { "id": 4, "part": 1, "kind": "text", "prompt": "Insurance company: … Life Insurance", "wordLimit": 2 },
+    { "id": 5, "part": 1, "kind": "text", "prompt": "Type of problem: pain in her left …", "wordLimit": 2 },
+    { "id": 6, "part": 1, "kind": "text", "prompt": "When it began: … ago", "wordLimit": 2 },
+    { "id": 7, "part": 1, "kind": "text", "prompt": "Sports played: belongs to a … club", "wordLimit": 2 },
+    { "id": 8, "part": 1, "kind": "text", "prompt": "Also goes … regularly", "wordLimit": 2 },
+    { "id": 9, "part": 1, "kind": "text", "prompt": "Medical history: last year injured her …", "wordLimit": 2 },
+    { "id": 10, "part": 1, "kind": "text", "prompt": "No regular medication apart from …", "wordLimit": 2 },
+    { "id": 11, "part": 2, "kind": "choice", "prompt": "Before Queen Elizabeth I visited the castle in 1576,", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "repairs were carried out to the guest rooms." }, { "letter": "B", "text": "a new building was constructed for her." }, { "letter": "C", "text": "a fire damaged part of the main hall." }] },
+    { "id": 12, "part": 2, "kind": "choice", "prompt": "In 1982, the castle was sold to", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "the government." }, { "letter": "B", "text": "the Fenys family." }, { "letter": "C", "text": "an entertainment company." }] },
+    { "id": 13, "part": 2, "kind": "choice", "prompt": "In some of the rooms, visitors can", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "speak to experts on the history of the castle." }, { "letter": "B", "text": "interact with actors dressed as famous characters." }, { "letter": "C", "text": "see models of historical figures moving and talking." }] },
+    { "id": 14, "part": 2, "kind": "choice", "prompt": "In the castle park, visitors can", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "see an 800-year-old tree." }, { "letter": "B", "text": "go to an art exhibition." }, { "letter": "C", "text": "visit a small zoo." }] },
+    { "id": 15, "part": 2, "kind": "choice", "prompt": "At the end of the visit, the group will have", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "afternoon tea in the conservatory." }, { "letter": "B", "text": "the chance to meet the castle's owners." }, { "letter": "C", "text": "a photograph together on the Great Staircase." }] },
+    { "id": 16, "part": 2, "kind": "choice", "prompt": "Starting point for walking the walls", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 17, "part": 2, "kind": "choice", "prompt": "Bow and arrow display", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 18, "part": 2, "kind": "choice", "prompt": "Hunting birds display", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 19, "part": 2, "kind": "choice", "prompt": "Traditional dancing", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 20, "part": 2, "kind": "choice", "prompt": "Shop", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 21, "part": 3, "kind": "choice", "prompt": "How will Rosie and Martin introduce their presentation?", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "with a drawing of woolly mammoths in their natural habitat" }, { "letter": "B", "text": "with a timeline showing when woolly mammoths lived" }, { "letter": "C", "text": "with a video clip about woolly mammoths" }] },
+    { "id": 22, "part": 3, "kind": "choice", "prompt": "What was surprising about the mammoth tooth found by Russell Graham?", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "It was still embedded in the mammoth's jawbone." }, { "letter": "B", "text": "It was from an unknown species of mammoth." }, { "letter": "C", "text": "It was not as old as mammoth remains from elsewhere." }] },
+    { "id": 23, "part": 3, "kind": "choice", "prompt": "The students will use an animated diagram to demonstrate how the mammoths", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "became isolated on the island." }, { "letter": "B", "text": "spread from the island to other areas." }, { "letter": "C", "text": "coexisted with other animals on the island." }] },
+    { "id": 24, "part": 3, "kind": "choice", "prompt": "According to Martin, what is unusual about the date of the mammoths' extinction on the island?", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "how exact it is" }, { "letter": "B", "text": "how early it is" }, { "letter": "C", "text": "how it was established" }] },
+    { "id": 25, "part": 3, "kind": "choice", "prompt": "Introduction", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 26, "part": 3, "kind": "choice", "prompt": "Discovery of the mammoth tooth", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 27, "part": 3, "kind": "choice", "prompt": "Initial questions asked by the researchers", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 28, "part": 3, "kind": "choice", "prompt": "Further research carried out on the island", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 29, "part": 3, "kind": "choice", "prompt": "Findings and possible explanations", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 30, "part": 3, "kind": "choice", "prompt": "Relevance to the present day", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 31, "part": 4, "kind": "text", "prompt": "Many cultures invented … and other ceremonies to make the weather gods friendly", "wordLimit": 1 },
+    { "id": 32, "part": 4, "kind": "text", "prompt": "People needed to observe and interpret the sky to ensure their …", "wordLimit": 1 },
+    { "id": 33, "part": 4, "kind": "text", "prompt": "Around 650 BC, Babylonians started forecasting, using weather phenomena such as …", "wordLimit": 1 },
+    { "id": 34, "part": 4, "kind": "text", "prompt": "By 300 BC, the Chinese had a calendar made up of a number of … connected with the weather", "wordLimit": 1 },
+    { "id": 35, "part": 4, "kind": "text", "prompt": "Aristotle also described haloes and …", "wordLimit": 1 },
+    { "id": 36, "part": 4, "kind": "text", "prompt": "Many proverbs, e.g. about the significance of the colour of the …", "wordLimit": 1 },
+    { "id": 37, "part": 4, "kind": "text", "prompt": "15th century: scientists recognised value of … for the first time", "wordLimit": 1 },
+    { "id": 38, "part": 4, "kind": "text", "prompt": "Galileo invented the …", "wordLimit": 1 },
+    { "id": 39, "part": 4, "kind": "text", "prompt": "18th century: Franklin identified the movement of …", "wordLimit": 1 },
+    { "id": 40, "part": 4, "kind": "text", "prompt": "19th century: data from different locations could be sent to the same place by …", "wordLimit": 1 }
+  ]
+}

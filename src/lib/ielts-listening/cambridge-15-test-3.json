@@ -1,0 +1,71 @@
+{
+  "id": "cambridge-15-test-3",
+  "title": "Cambridge IELTS 15 · Listening Test 3",
+  "version": 1,
+  "endpoint": "/api/ielts-listening/cambridge-15-test-3",
+  "sections": [
+    { "part": 1, "title": "Part 1", "subtitle": "Employment agency: possible jobs", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-15%2Ftest-3%2Fpart-1.mp3?alt=media" },
+    { "part": 2, "title": "Part 2", "subtitle": "Street Play Scheme", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-15%2Ftest-3%2Fpart-2.mp3?alt=media" },
+    { "part": 3, "title": "Part 3", "subtitle": "A media studies assignment", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-15%2Ftest-3%2Fpart-3.mp3?alt=media" },
+    { "part": 4, "title": "Part 4", "subtitle": "Early history of keeping clean", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-15%2Ftest-3%2Fpart-4.mp3?alt=media" }
+  ],
+  "groups": {
+    "1": { "title": "Questions 1–10 · Note completion", "instructions": "Complete the notes below (Employment Agency: possible jobs). Write ONE WORD AND/OR A NUMBER for each answer." },
+    "11": { "title": "Questions 11–16 · Multiple choice", "instructions": "Choose the correct letter, A, B or C. (Street Play Scheme)" },
+    "17": { "title": "Questions 17–18 · Choose TWO letters", "instructions": "Which TWO benefits for children does Alice think are the most important? Choose TWO letters, A–E.  A: increased physical activity · B: increased sense of independence · C: opportunity to learn new games · D: opportunity to be part of a community · E: opportunity to make new friends." },
+    "19": { "title": "Questions 19–20 · Choose TWO letters", "instructions": "Which TWO results of the King Street experiment surprised Alice? Choose TWO letters, A–E.  A: more shoppers · B: improved safety · C: less air pollution · D: more relaxed atmosphere · E: less noise pollution." },
+    "21": { "title": "Questions 21–26 · Note completion", "instructions": "Complete the notes below (what Hazel should analyse about items in newspapers). Write ONE WORD ONLY for each answer." },
+    "27": {
+      "title": "Questions 27–30 · Matching",
+      "instructions": "What does Hazel decide to do about each of the following types of articles? Drag the correct letter, A, B or C, onto each type — or tap a type, then tap an option.",
+      "matchOptions": [
+        { "letter": "A", "text": "She will definitely look for a suitable article." },
+        { "letter": "B", "text": "She may look for a suitable article." },
+        { "letter": "C", "text": "She definitely won't look for an article." }
+      ]
+    },
+    "31": { "title": "Questions 31–40 · Note completion", "instructions": "Complete the notes below (Early history of keeping clean). Write ONE WORD ONLY for each answer." }
+  },
+  "questions": [
+    { "id": 1, "part": 1, "kind": "text", "prompt": "First job — administrative assistant in a company that produces … (North London)", "wordLimit": 2 },
+    { "id": 2, "part": 1, "kind": "text", "prompt": "Responsibilities: data entry, take notes and go to … ", "wordLimit": 2 },
+    { "id": 3, "part": 1, "kind": "text", "prompt": "Responsibilities: general admin and management of … ", "wordLimit": 2 },
+    { "id": 4, "part": 1, "kind": "text", "prompt": "Requirements: attention to … ", "wordLimit": 2 },
+    { "id": 5, "part": 1, "kind": "text", "prompt": "Experience: need a minimum of … of teleconferencing", "wordLimit": 2 },
+    { "id": 6, "part": 1, "kind": "text", "prompt": "Second job — warehouse assistant: stock management and managing … ", "wordLimit": 2 },
+    { "id": 7, "part": 1, "kind": "text", "prompt": "Requirements: very organised and … ", "wordLimit": 2 },
+    { "id": 8, "part": 1, "kind": "text", "prompt": "Requirements: used to working in a … ", "wordLimit": 2 },
+    { "id": 9, "part": 1, "kind": "text", "prompt": "Requirements: able to cope with items that are … ", "wordLimit": 2 },
+    { "id": 10, "part": 1, "kind": "text", "prompt": "Experience needed: … service (plus driving in London and warehouse work)", "wordLimit": 2 },
+    { "id": 11, "part": 2, "kind": "choice", "prompt": "When did the Street Play Scheme first take place?", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "two years ago" }, { "letter": "B", "text": "three years ago" }, { "letter": "C", "text": "six years ago" }] },
+    { "id": 12, "part": 2, "kind": "choice", "prompt": "How often is Beechwood Road closed to traffic now?", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "once a week" }, { "letter": "B", "text": "on Saturdays and Sundays" }, { "letter": "C", "text": "once a month" }] },
+    { "id": 13, "part": 2, "kind": "choice", "prompt": "Who is responsible for closing the road?", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "a council official" }, { "letter": "B", "text": "the police" }, { "letter": "C", "text": "local wardens" }] },
+    { "id": 14, "part": 2, "kind": "choice", "prompt": "Residents who want to use their cars", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "have to park in another street." }, { "letter": "B", "text": "must drive very slowly." }, { "letter": "C", "text": "need permission from a warden." }] },
+    { "id": 15, "part": 2, "kind": "choice", "prompt": "Alice says that Street Play Schemes are most needed in", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "wealthy areas." }, { "letter": "B", "text": "quiet suburban areas." }, { "letter": "C", "text": "areas with heavy traffic." }] },
+    { "id": 16, "part": 2, "kind": "choice", "prompt": "What has been the reaction of residents who are not parents?", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "Many of them were unhappy at first." }, { "letter": "B", "text": "They like seeing children play in the street." }, { "letter": "C", "text": "They are surprised by the lack of noise." }] },
+    { "id": 17, "part": 2, "kind": "choice", "prompt": "Most important benefits for children (first)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 18, "part": 2, "kind": "choice", "prompt": "Most important benefits for children (second)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 19, "part": 2, "kind": "choice", "prompt": "Results of the King Street experiment that surprised Alice (first)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 20, "part": 2, "kind": "choice", "prompt": "Results of the King Street experiment that surprised Alice (second)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 21, "part": 3, "kind": "text", "prompt": "What … the item is on", "wordLimit": 1 },
+    { "id": 22, "part": 3, "kind": "text", "prompt": "The … of the item, including the headline", "wordLimit": 1 },
+    { "id": 23, "part": 3, "kind": "text", "prompt": "Any … accompanying the item", "wordLimit": 1 },
+    { "id": 24, "part": 3, "kind": "text", "prompt": "The … of the item, e.g. what's made prominent", "wordLimit": 1 },
+    { "id": 25, "part": 3, "kind": "text", "prompt": "The writer's main … ", "wordLimit": 1 },
+    { "id": 26, "part": 3, "kind": "text", "prompt": "The … the writer may make about the reader", "wordLimit": 1 },
+    { "id": 27, "part": 3, "kind": "choice", "prompt": "national news item", "options": ["A", "B", "C"] },
+    { "id": 28, "part": 3, "kind": "choice", "prompt": "editorial", "options": ["A", "B", "C"] },
+    { "id": 29, "part": 3, "kind": "choice", "prompt": "human interest", "options": ["A", "B", "C"] },
+    { "id": 30, "part": 3, "kind": "choice", "prompt": "arts", "options": ["A", "B", "C"] },
+    { "id": 31, "part": 4, "kind": "text", "prompt": "Prehistoric times: water was used to wash off … ", "wordLimit": 1 },
+    { "id": 32, "part": 4, "kind": "text", "prompt": "Ancient Babylon: soap-like material found in … cylinders", "wordLimit": 1 },
+    { "id": 33, "part": 4, "kind": "text", "prompt": "Ancient Greece: used a strigil — a scraper made of … ", "wordLimit": 1 },
+    { "id": 34, "part": 4, "kind": "text", "prompt": "Ancient Germany and Gaul: used soap to colour their … ", "wordLimit": 1 },
+    { "id": 35, "part": 4, "kind": "text", "prompt": "Ancient Rome: from about 312 BC, water carried to Roman … by aqueducts", "wordLimit": 1 },
+    { "id": 36, "part": 4, "kind": "text", "prompt": "Middle Ages: decline in bathing contributed to occurrence of … ", "wordLimit": 1 },
+    { "id": 37, "part": 4, "kind": "text", "prompt": "Middle Ages: … began to be added to soap", "wordLimit": 1 },
+    { "id": 38, "part": 4, "kind": "text", "prompt": "1791: Leblanc invented a way of making soda ash from … ", "wordLimit": 1 },
+    { "id": 39, "part": 4, "kind": "text", "prompt": "Early 1800s: Chevreul turned soapmaking into a … ", "wordLimit": 1 },
+    { "id": 40, "part": 4, "kind": "text", "prompt": "From the 1800s, there was no longer a … on soap", "wordLimit": 1 }
+  ]
+}

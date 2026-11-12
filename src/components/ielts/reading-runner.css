@@ -1,0 +1,120 @@
+/* Supplemental styles for the data-driven reading runner (extends reading-test.css). */
+
+.reading-para-ref {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+  background: var(--ielts-crimson, #b3122f);
+  color: #fff;
+  font-size: 0.8rem;
+  vertical-align: middle;
+}
+
+/* Multiple-choice option descriptions (A–D with text). */
+.reading-choices {
+  list-style: none;
+  margin: 0.5rem 0 0.75rem;
+  padding: 0;
+  display: grid;
+  gap: 0.35rem;
+}
+.reading-choices li {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #1f2430;
+}
+.reading-choices li b {
+  display: inline-flex;
+  min-width: 1.4rem;
+  margin-right: 0.4rem;
+  color: var(--ielts-crimson, #b3122f);
+}
+
+/* Summary completion with inline blanks. */
+.reading-summary {
+  background: #fff;
+  border: 1px solid #ecdfe2;
+  border-radius: 14px;
+  padding: 1rem 1.15rem;
+}
+.reading-summary h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  color: var(--ielts-midnight, #16203a);
+}
+.reading-summary p {
+  line-height: 2.4;
+  color: #1f2430;
+}
+.reading-summary-blank {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin: 0 0.15rem;
+  vertical-align: middle;
+}
+.reading-summary-blank strong {
+  font-size: 0.75rem;
+  color: var(--ielts-crimson, #b3122f);
+}
+.reading-summary-blank .reading-answer { display: inline-block; }
+.reading-summary-blank input,
+.reading-summary-blank select { min-width: 7rem; }
+
+/* Diagram labelling list. */
+.reading-diagram-caption {
+  margin: 0.4rem 0 0.75rem;
+  font-weight: 600;
+  color: var(--ielts-midnight, #16203a);
+  text-align: center;
+}
+.reading-diagram-labels {
+  display: grid;
+  gap: 0.6rem;
+}
+.reading-diagram-label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #ecdfe2;
+  border-radius: 12px;
+  background: #fff;
+}
+.reading-diagram-label label { flex: 1; min-width: 12rem; }
+.reading-diagram-label b { color: var(--ielts-crimson, #b3122f); margin-right: 0.35rem; }
+
+.reading-summary-blank input:disabled,
+.reading-diagram-label input:disabled { opacity: 0.85; }
+
+.reading-explain { margin-top: 0.4rem; }
+.reading-explain-btn { font-size: 0.78rem; font-weight: 700; color: var(--ielts-crimson, #b3122f); background: transparent; border: 1px dashed currentColor; border-radius: 0.5rem; padding: 0.25rem 0.6rem; cursor: pointer; }
+.reading-explain-btn:hover { background: rgba(179, 18, 47, 0.06); }
+.reading-explain-loading { font-size: 0.8rem; color: #64748b; margin-top: 0.3rem; }
+.reading-explain-error { font-size: 0.8rem; color: #b3122f; margin-top: 0.3rem; }
+.reading-explain-box { margin-top: 0.4rem; background: #fff8f9; border: 1px solid #f3cdd5; border-left: 3px solid var(--ielts-crimson, #b3122f); border-radius: 0.5rem; padding: 0.6rem 0.75rem; }
+.reading-explain-box strong { display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ielts-crimson, #b3122f); margin-bottom: 0.25rem; }
+.reading-explain-box p { font-size: 0.86rem; line-height: 1.55; color: #334155; margin: 0; }
+
+/* Larger, easier-to-read text in the test runners (shared by reading + listening). */
+.reading-question-label label { font-size: 16px; line-height: 1.6; }
+.reading-group h3 { font-size: 16px; }
+.reading-group p { font-size: 14.5px; line-height: 1.7; }
+.reading-answer input, .reading-answer select { font-size: 16px; }
+.reading-choices { font-size: 15px; }
+.reading-diagram-label label { font-size: 15px; }
+.reading-summary p, .reading-summary-blank { font-size: 15px; line-height: 1.95; }
+.reading-explain-box p { font-size: 14.5px; }
+.reading-tabs { font-size: 14px; }
+
+/* Obvious "fill-in" blank marker inside a completion question's text. */
+.reading-gap { display: inline-block; min-width: 3.4em; text-align: center; color: #b3122f; font-weight: 800; letter-spacing: 1px; background: #fff1cc; border-bottom: 2px solid #b3122f; border-radius: 4px; padding: 0 0.35em; margin: 0 0.15em; vertical-align: baseline; }
+
+/* Larger passage text for easier reading. */
+.reading-passage p:not(.studio-eyebrow) { font-size: 18px; line-height: 2; }
+.reading-passage h2 { font-size: 30px; }

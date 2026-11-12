@@ -1,0 +1,47 @@
+import 'server-only';
+
+// Answer key for Cambridge IELTS 20 · Academic Reading Test 4, transcribed from
+// the owner-supplied material. Matching is case/whitespace-insensitive and
+// accepts the listed variants (see grading.ts).
+export const answerKey: Record<string, string[]> = {
+  "1": ["teacher"],
+  "2": ["charcoal"],
+  "3": ["skyscrapers"],
+  "4": ["flowers"],
+  "5": ["bones"],
+  "6": ["landscape"],
+  "7": ["rivers"],
+  "8": ["FALSE"],
+  "9": ["TRUE"],
+  "10": ["FALSE"],
+  "11": ["TRUE"],
+  "12": ["NOT GIVEN"],
+  "13": ["NOT GIVEN"],
+  "14": ["C"],
+  "15": ["A"],
+  "16": ["D"],
+  "17": ["F"],
+  "18": ["pumps"],
+  "19": ["dams"],
+  "20": ["float"],
+  "21": ["crops"],
+  "22": ["trees"],
+  "23": ["B"],
+  "24": ["E"],
+  "25": ["A"],
+  "26": ["C"],
+  "27": ["D"],
+  "28": ["G"],
+  "29": ["B"],
+  "30": ["C"],
+  "31": ["B"],
+  "32": ["D"],
+  "33": ["E"],
+  "34": ["B"],
+  "35": ["C"],
+  "36": ["A"],
+  "37": ["jackals"],
+  "38": ["diseases"],
+  "39": ["food"],
+  "40": ["foxes"]
+};

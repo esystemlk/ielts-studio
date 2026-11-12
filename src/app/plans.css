@@ -1,0 +1,68 @@
+/* Plans page (from docs/ielts-studio/pricing.html). */
+.pricing { max-width: 1120px; margin: 0 auto; padding: 28px clamp(16px, 4vw, 40px) 72px; }
+  .pricing > header { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+  .intro { text-align: center; max-width: 640px; margin: 56px auto 40px; }
+  .intro h1 { font: 500 clamp(32px, 5vw, 46px)/1.1 var(--serif); letter-spacing: -0.02em; margin: 10px 0 14px; }
+  .intro p { color: var(--ink-2); font-size: 17px; margin: 0; }
+  .plans { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; align-items: stretch; }
+  .plan { position: relative; display: flex; flex-direction: column; gap: 18px; padding: 28px 26px; border: 1px solid var(--rule); border-radius: 22px; background: var(--surface); }
+  .plan.featured { border: 2px solid var(--accent); box-shadow: 0 18px 40px -24px rgba(208, 16, 27, 0.45); }
+  .plan.dark { background: #0d0d0d; color: #fff; border-color: #0d0d0d; }
+  .plan.dark .muted, .plan.dark .plan-note { color: #a3a3a3; }
+  .ribbon { position: absolute; top: -13px; left: 26px; background: var(--accent); color: #fff; font: 600 11px var(--sans); letter-spacing: 0.12em; text-transform: uppercase; padding: 6px 12px; border-radius: 999px; }
+  .plan-head { display: flex; align-items: center; gap: 12px; }
+  .plan-head img { width: 40px; height: 40px; }
+  .plan-head h2 { font: 500 24px/1 var(--serif); margin: 0; }
+  .price { display: flex; align-items: baseline; gap: 6px; }
+  .price b { font: 500 52px/1 var(--serif); letter-spacing: -0.02em; }
+  .price span { color: var(--ink-3); font-size: 15px; }
+  .plan.dark .price span { color: #a3a3a3; }
+  .price.tbd b { font-size: 30px; }
+  .renew { margin: -12px 0 0; font-size: 12.5px; font-weight: 600; color: var(--accent-ink); }
+  .plan.dark .renew { color: #ff6a70; }
+  .plan-note { font-size: 14px; color: var(--ink-2); margin: -8px 0 0; min-height: 42px; }
+  .plan .btn { width: 100%; }
+  .plan.dark .btn { background: #fff; color: #0d0d0d; border-color: #fff; }
+  .plan.dark .btn:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .feats { list-style: none; margin: 0; padding: 18px 0 0; border-top: 1px solid var(--rule); display: grid; gap: 12px; font-size: 14.5px; }
+  .plan.dark .feats { border-top-color: #2e2e2e; }
+  .feats li { display: grid; grid-template-columns: 20px 1fr; gap: 10px; align-items: start; }
+  .feats li small { display: block; color: var(--ink-3); font-size: 13px; }
+  .plan.dark .feats li small { color: #a3a3a3; }
+  .feats .no { color: var(--ink-3); }
+  .plan.dark .feats .no { color: #6f6f6f; }
+  .tick, .cross { width: 20px; height: 20px; border-radius: 999px; display: inline-grid; place-items: center; font: 700 11px var(--sans); margin-top: 1px; }
+  .tick { background: var(--accent-wash); color: var(--accent); }
+  .plan.dark .tick { background: #2b1213; color: #ff4d55; }
+  .cross { background: var(--tint); color: var(--ink-3); }
+  .plan.dark .cross { background: #1f1f1f; color: #6f6f6f; }
+  .mock-offer { margin-top: 28px; display: grid; grid-template-columns: 64px minmax(0, 1fr) auto; gap: 24px; align-items: center; padding: 26px 28px; border: 1px solid var(--rule); border-radius: 22px; background: var(--tint); }
+  .mock-ic { width: 64px; height: 64px; }
+  .mock-copy h2 { font: 500 26px/1.15 var(--serif); margin: 6px 0 8px; }
+  .mock-copy p:last-child { margin: 0; color: var(--ink-2); font-size: 15px; max-width: 560px; }
+  .mock-buy { min-width: 220px; }
+  .mock-buy .btn { width: 100%; }
+  @media (max-width: 760px) { .mock-offer { grid-template-columns: 1fr; text-align: left; } .mock-buy { min-width: 0; } }
+  .compare { margin-top: 64px; }
+  .compare h2, .faq h2 { font: 500 28px/1.2 var(--serif); text-align: center; margin: 0 0 22px; }
+  .compare-wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: 18px; }
+  table.cmp { width: 100%; border-collapse: collapse; font-size: 14.5px; min-width: 620px; background: var(--surface); }
+  table.cmp th, table.cmp td { padding: 14px 18px; text-align: center; border-bottom: 1px solid var(--rule); }
+  table.cmp th:first-child, table.cmp td:first-child { text-align: left; }
+  table.cmp thead th { font: 500 18px var(--serif); background: var(--tint); }
+  table.cmp thead th small { display: block; font: 400 13px var(--sans); color: var(--ink-3); }
+  table.cmp tbody tr:last-child td { border-bottom: 0; }
+  table.cmp .group td { background: var(--tint); font: 600 11px var(--sans); letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); text-align: left; }
+  table.cmp .hl { background: color-mix(in srgb, var(--accent-wash) 55%, transparent); }
+  .y { color: var(--accent); font-weight: 600; }
+  .n { color: var(--ink-3); }
+  .faq { margin-top: 64px; max-width: 760px; margin-left: auto; margin-right: auto; }
+  .faq details { border-bottom: 1px solid var(--rule); padding: 16px 4px; }
+  .faq summary { cursor: pointer; font-weight: 500; font-size: 16px; list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+  .faq summary::after { content: "+"; color: var(--accent); font-size: 20px; line-height: 1; }
+  .faq details[open] summary::after { content: "–"; }
+  .faq details p { color: var(--ink-2); margin: 10px 0 0; font-size: 15px; }
+  .fine { text-align: center; color: var(--ink-3); font-size: 13px; margin-top: 36px; }
+  @media (max-width: 960px) { .plans { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; } .plan-note { min-height: 0; } }
+  .pricing > header .wordmark b { white-space: nowrap; }
+  @media (max-width: 520px) { .pricing > header .wordmark span { display: none; } .intro { margin-top: 36px; } }

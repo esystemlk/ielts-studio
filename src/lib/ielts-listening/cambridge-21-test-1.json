@@ -1,0 +1,85 @@
+{
+  "id": "cambridge-21-test-1",
+  "title": "Cambridge IELTS 21 · Listening Test 1",
+  "version": 1,
+  "endpoint": "/api/ielts-listening/cambridge-21-test-1",
+  "sections": [
+    { "part": 1, "title": "Part 1", "subtitle": "Oyster Bay Sailing Club courses", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-21%2Ftest-1%2Fpart-1.mp3?alt=media" },
+    { "part": 2, "title": "Part 2", "subtitle": "Becoming a makeup artist", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-21%2Ftest-1%2Fpart-2.mp3?alt=media" },
+    { "part": 3, "title": "Part 3", "subtitle": "Ocean biodiversity resources", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-21%2Ftest-1%2Fpart-3.mp3?alt=media" },
+    { "part": 4, "title": "Part 4", "subtitle": "Sources of rubber", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-21%2Ftest-1%2Fpart-4.mp3?alt=media" }
+  ],
+  "groups": {
+    "1": { "title": "Questions 1–6 · Table completion", "instructions": "Complete the table below (sailing courses). Write ONE WORD AND/OR A NUMBER for each answer." },
+    "7": { "title": "Questions 7–10 · Note completion", "instructions": "Complete the notes below (General information). Write ONE WORD ONLY for each answer." },
+    "11": { "title": "Questions 11–16 · Multiple choice", "instructions": "Choose the correct letter, A, B or C. (Becoming a makeup artist)" },
+    "17": {
+      "title": "Questions 17–20 · Matching",
+      "instructions": "What ability is required for each of the following duties? Drag the correct letter, A, B or C, onto each duty — or tap a duty, then tap an option.",
+      "matchOptions": [
+        { "letter": "A", "text": "being well-organised" },
+        { "letter": "B", "text": "being flexible" },
+        { "letter": "C", "text": "working quickly" }
+      ]
+    },
+    "21": { "title": "Questions 21–22 · Choose TWO letters", "instructions": "Which TWO features of the lecture on ocean biodiversity had the greatest impact on the students? Choose TWO letters, A–E.  A: the references to local problems · B: the broad focus of the examples · C: the practical suggestions for solutions · D: the type of issues discussed · E: the implications for government policy." },
+    "23": { "title": "Questions 23–24 · Choose TWO letters", "instructions": "Which TWO details about the research project particularly impressed the students? Choose TWO letters, A–E.  A: the team's previous successes · B: its wide geographical scale · C: the use of new technology · D: the extensive statistical evidence · E: the large range of specialists involved." },
+    "25": {
+      "title": "Questions 25–30 · Matching",
+      "instructions": "What is the students' opinion of each of the following resources related to ocean biodiversity? Choose SIX answers from the box and drag the correct letter, A–H, onto each resource — or tap a resource, then tap an option.",
+      "matchOptions": [
+        { "letter": "A", "text": "This is aimed at a very specialist audience." },
+        { "letter": "B", "text": "This is now rather outdated." },
+        { "letter": "C", "text": "This was an effective description of a new danger." },
+        { "letter": "D", "text": "This suggests possible ways to improve the situation." },
+        { "letter": "E", "text": "This does not give a balanced account." },
+        { "letter": "F", "text": "This is too predictable to be useful." },
+        { "letter": "G", "text": "This gives insufficient evidence for its claims." },
+        { "letter": "H", "text": "This gives a clear explanation of the problems." }
+      ]
+    },
+    "31": { "title": "Questions 31–40 · Note completion", "instructions": "Complete the notes below (Sources of rubber). Write ONE WORD ONLY for each answer." }
+  },
+  "questions": [
+    { "id": 1, "part": 1, "kind": "text", "prompt": "Taster day: small groups (max … people)", "wordLimit": 2 },
+    { "id": 2, "part": 1, "kind": "text", "prompt": "Level 1: basic theory, e.g. understanding the … and tides", "wordLimit": 2 },
+    { "id": 3, "part": 1, "kind": "text", "prompt": "Level 1: basic sailing skills including … information", "wordLimit": 2 },
+    { "id": 4, "part": 1, "kind": "text", "prompt": "Level 1 cost: … available for club members", "wordLimit": 2 },
+    { "id": 5, "part": 1, "kind": "text", "prompt": "Level 1 cost: all inclusive (plus a useful …)", "wordLimit": 2 },
+    { "id": 6, "part": 1, "kind": "text", "prompt": "Level 1: a … at the end of the course for all participants", "wordLimit": 2 },
+    { "id": 7, "part": 1, "kind": "text", "prompt": "Bring suitable clothing, a … and toiletries (e.g. shampoo)", "wordLimit": 1 },
+    { "id": 8, "part": 1, "kind": "text", "prompt": "There is a … at the club", "wordLimit": 1 },
+    { "id": 9, "part": 1, "kind": "text", "prompt": "Online training … are recommended", "wordLimit": 1 },
+    { "id": 10, "part": 1, "kind": "text", "prompt": "… are available for course participants", "wordLimit": 1 },
+    { "id": 11, "part": 2, "kind": "choice", "prompt": "What should trainees always expect to get when working on low budget short films?", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "travel expenses" }, { "letter": "B", "text": "a minimum wage" }, { "letter": "C", "text": "meals" }] },
+    { "id": 12, "part": 2, "kind": "choice", "prompt": "According to the speaker, on big budget films trainees may get experience of", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "makeup for special effects." }, { "letter": "B", "text": "working with different ethnicities." }, { "letter": "C", "text": "creating a variety of hair styles." }] },
+    { "id": 13, "part": 2, "kind": "choice", "prompt": "The speaker says a problem for makeup artists is", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "dealing with difficult directors." }, { "letter": "B", "text": "being shouted at by their supervisor." }, { "letter": "C", "text": "waiting around for hours doing nothing." }] },
+    { "id": 14, "part": 2, "kind": "choice", "prompt": "How did the speaker feel when she met famous actors for the first time?", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "very shy" }, { "letter": "B", "text": "very proud" }, { "letter": "C", "text": "very disappointed" }] },
+    { "id": 15, "part": 2, "kind": "choice", "prompt": "What advice does the speaker give about makeup kits?", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "Always carry a basic kit with you." }, { "letter": "B", "text": "Only buy the best products for a makeup kit." }, { "letter": "C", "text": "Ask other makeup artists to check your kit." }] },
+    { "id": 16, "part": 2, "kind": "choice", "prompt": "What advice does the speaker give about creating a portfolio?", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "Keep print and digital photos." }, { "letter": "B", "text": "Only include a small selection of photos." }, { "letter": "C", "text": "Get permission to use photos." }] },
+    { "id": 17, "part": 2, "kind": "choice", "prompt": "Prepping an actor", "options": ["A", "B", "C"] },
+    { "id": 18, "part": 2, "kind": "choice", "prompt": "Continuity", "options": ["A", "B", "C"] },
+    { "id": 19, "part": 2, "kind": "choice", "prompt": "General", "options": ["A", "B", "C"] },
+    { "id": 20, "part": 2, "kind": "choice", "prompt": "Applying makeup", "options": ["A", "B", "C"] },
+    { "id": 21, "part": 3, "kind": "choice", "prompt": "Features of the lecture with the greatest impact (first)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 22, "part": 3, "kind": "choice", "prompt": "Features of the lecture with the greatest impact (second)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 23, "part": 3, "kind": "choice", "prompt": "Details about the research project that impressed the students (first)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 24, "part": 3, "kind": "choice", "prompt": "Details about the research project that impressed the students (second)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 25, "part": 3, "kind": "choice", "prompt": "Article on invasive lionfish", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 26, "part": 3, "kind": "choice", "prompt": "Documentary on microplastics", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 27, "part": 3, "kind": "choice", "prompt": "Podcast on ocean pollution", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 28, "part": 3, "kind": "choice", "prompt": "Book on coastal ecosystems", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 29, "part": 3, "kind": "choice", "prompt": "Article on metal toxicity", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 30, "part": 3, "kind": "choice", "prompt": "Podcast on floating marine cities", "options": ["A", "B", "C", "D", "E", "F", "G", "H"] },
+    { "id": 31, "part": 4, "kind": "text", "prompt": "Three essential resources: …, fossil fuels, rubber", "wordLimit": 1 },
+    { "id": 32, "part": 4, "kind": "text", "prompt": "Natural rubber: the growth of the tree is … ", "wordLimit": 1 },
+    { "id": 33, "part": 4, "kind": "text", "prompt": "Production cannot easily be adjusted because of increasing or decreasing … ", "wordLimit": 1 },
+    { "id": 34, "part": 4, "kind": "text", "prompt": "The tree only grows near the … ", "wordLimit": 1 },
+    { "id": 35, "part": 4, "kind": "text", "prompt": "It is very difficult to … rubber after production", "wordLimit": 1 },
+    { "id": 36, "part": 4, "kind": "text", "prompt": "Lack of genetic diversity → danger of disease caused by a … ", "wordLimit": 1 },
+    { "id": 37, "part": 4, "kind": "text", "prompt": "New threats include extreme … events", "wordLimit": 1 },
+    { "id": 38, "part": 4, "kind": "text", "prompt": "Synthetic rubber is less … than natural rubber", "wordLimit": 1 },
+    { "id": 39, "part": 4, "kind": "text", "prompt": "A wild flower (a type of dandelion) has rubber in its … ", "wordLimit": 1 },
+    { "id": 40, "part": 4, "kind": "text", "prompt": "It does not require good … ", "wordLimit": 1 }
+  ]
+}

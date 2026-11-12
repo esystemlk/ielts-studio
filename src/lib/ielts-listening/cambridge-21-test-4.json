@@ -1,0 +1,89 @@
+{
+  "id": "cambridge-21-test-4",
+  "title": "Cambridge IELTS 21 · Listening Test 4",
+  "version": 1,
+  "endpoint": "/api/ielts-listening/cambridge-21-test-4",
+  "sections": [
+    { "part": 1, "title": "Part 1", "subtitle": "Survey about shopping in Broadbeach", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-21%2Ftest-4%2Fpart-1.mp3?alt=media" },
+    { "part": 2, "title": "Part 2", "subtitle": "Annual business exhibition", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-21%2Ftest-4%2Fpart-2.mp3?alt=media" },
+    { "part": 3, "title": "Part 3", "subtitle": "Presentation on houses of the future", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-21%2Ftest-4%2Fpart-3.mp3?alt=media" },
+    { "part": 4, "title": "Part 4", "subtitle": "Music therapy for surgical patients", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-21%2Ftest-4%2Fpart-4.mp3?alt=media" }
+  ],
+  "groups": {
+    "1": { "title": "Questions 1–10 · Form completion", "instructions": "Complete the form below (Survey about shopping in Broadbeach). Write ONE WORD ONLY for each answer." },
+    "11": { "title": "Questions 11–12 · Choose TWO letters", "instructions": "In which TWO areas of the business exhibition did James Craig promote his company last year? Choose TWO letters, A–E.  A: the Digital Marketing Centre · B: the TalkCon Zone · C: the Breakout area · D: the Business Village · E: the Business Connections Zone." },
+    "13": { "title": "Questions 13–14 · Choose TWO letters", "instructions": "Which TWO facts are given about discounts on popular brands available to exhibitors? Choose TWO letters, A–E.  A: They are available to all members of exhibiting companies. · B: They can be used for both food and clothing. · C: They only apply if people spend at least £400. · D: They can be used by family members. · E: The percentage saved is always the same." },
+    "15": {
+      "title": "Questions 15–20 · Matching",
+      "instructions": "Which topic will each of the following speakers focus on? Choose SIX answers from the box and drag the correct letter, A–G, onto each speaker — or tap a speaker, then tap an option.",
+      "matchOptions": [
+        { "letter": "A", "text": "Supporting job seekers" },
+        { "letter": "B", "text": "Dealing with personal problems" },
+        { "letter": "C", "text": "Effects of an unexpectedly rapid expansion" },
+        { "letter": "D", "text": "A global range of business experiences" },
+        { "letter": "E", "text": "Coping with financial set-backs" },
+        { "letter": "F", "text": "Developing a company in response to changing markets" },
+        { "letter": "G", "text": "Combining business success with contributions to charities" }
+      ]
+    },
+    "21": { "title": "Questions 21–23 · Multiple choice", "instructions": "Choose the correct letter, A, B or C. (Presentation on houses of the future)" },
+    "24": {
+      "title": "Questions 24–30 · Matching",
+      "instructions": "What opinion is given about each of the following developments? Choose SEVEN answers from the box and drag the correct letter, A–I, onto each development — or tap a development, then tap an option.",
+      "matchOptions": [
+        { "letter": "A", "text": "This could cause unnecessary anxiety." },
+        { "letter": "B", "text": "This would be especially beneficial for city residents." },
+        { "letter": "C", "text": "This would be challenging for young people." },
+        { "letter": "D", "text": "This would have environmental benefits." },
+        { "letter": "E", "text": "This could encourage creativity." },
+        { "letter": "F", "text": "This could lead to social problems." },
+        { "letter": "G", "text": "This could enable retired people to share a project." },
+        { "letter": "H", "text": "This would help some people but cause problems for others." },
+        { "letter": "I", "text": "This would suit both existing and new members of a household." }
+      ]
+    },
+    "31": { "title": "Questions 31–40 · Note completion", "instructions": "Complete the notes below (Music therapy for surgical patients). Write ONE WORD ONLY for each answer." }
+  },
+  "questions": [
+    { "id": 1, "part": 1, "kind": "text", "prompt": "Name: Martyn … ", "wordLimit": 1 },
+    { "id": 2, "part": 1, "kind": "text", "prompt": "Today's journey to the town centre: used his … ", "wordLimit": 1 },
+    { "id": 3, "part": 1, "kind": "text", "prompt": "Purpose of trip: has visited the … ", "wordLimit": 1 },
+    { "id": 4, "part": 1, "kind": "text", "prompt": "Purpose of trip: looking for a new … ", "wordLimit": 1 },
+    { "id": 5, "part": 1, "kind": "text", "prompt": "Purpose of trip: collecting … (after repair)", "wordLimit": 1 },
+    { "id": 6, "part": 1, "kind": "text", "prompt": "Preferred day for shopping: … ", "wordLimit": 1 },
+    { "id": 7, "part": 1, "kind": "text", "prompt": "Thinks there are too many places selling … ", "wordLimit": 1 },
+    { "id": 8, "part": 1, "kind": "text", "prompt": "Would like more places to buy … ", "wordLimit": 1 },
+    { "id": 9, "part": 1, "kind": "text", "prompt": "New out-of-town centre: likes the … best", "wordLimit": 1 },
+    { "id": 10, "part": 1, "kind": "text", "prompt": "New out-of-town centre: believes the … is unnecessary", "wordLimit": 1 },
+    { "id": 11, "part": 2, "kind": "choice", "prompt": "Areas where James Craig promoted his company last year (first)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 12, "part": 2, "kind": "choice", "prompt": "Areas where James Craig promoted his company last year (second)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 13, "part": 2, "kind": "choice", "prompt": "Facts about discounts for exhibitors (first)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 14, "part": 2, "kind": "choice", "prompt": "Facts about discounts for exhibitors (second)", "options": ["A", "B", "C", "D", "E"] },
+    { "id": 15, "part": 2, "kind": "choice", "prompt": "Jim Clowrie", "options": ["A", "B", "C", "D", "E", "F", "G"] },
+    { "id": 16, "part": 2, "kind": "choice", "prompt": "David France", "options": ["A", "B", "C", "D", "E", "F", "G"] },
+    { "id": 17, "part": 2, "kind": "choice", "prompt": "Oliver Stanton", "options": ["A", "B", "C", "D", "E", "F", "G"] },
+    { "id": 18, "part": 2, "kind": "choice", "prompt": "Francesca Heptonstall", "options": ["A", "B", "C", "D", "E", "F", "G"] },
+    { "id": 19, "part": 2, "kind": "choice", "prompt": "Salman Khan", "options": ["A", "B", "C", "D", "E", "F", "G"] },
+    { "id": 20, "part": 2, "kind": "choice", "prompt": "Annie Craven", "options": ["A", "B", "C", "D", "E", "F", "G"] },
+    { "id": 21, "part": 3, "kind": "choice", "prompt": "Which aspect of their presentation are Mia and Leo both concerned about?", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "meeting the deadline" }, { "letter": "B", "text": "finding suitable examples" }, { "letter": "C", "text": "including original ideas" }] },
+    { "id": 22, "part": 3, "kind": "choice", "prompt": "The students decide to focus their assignment on housing for", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "family groups." }, { "letter": "B", "text": "old people." }, { "letter": "C", "text": "single people." }] },
+    { "id": 23, "part": 3, "kind": "choice", "prompt": "The students agree that demand for accommodation in urban areas should be met by", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "repurposing offices and factories." }, { "letter": "B", "text": "constructing tall buildings." }, { "letter": "C", "text": "developing creative ideas for smaller homes." }] },
+    { "id": 24, "part": 3, "kind": "choice", "prompt": "use of roof space for gardens", "options": ["A", "B", "C", "D", "E", "F", "G", "H", "I"] },
+    { "id": 25, "part": 3, "kind": "choice", "prompt": "shared working spaces", "options": ["A", "B", "C", "D", "E", "F", "G", "H", "I"] },
+    { "id": 26, "part": 3, "kind": "choice", "prompt": "moveable internal walls", "options": ["A", "B", "C", "D", "E", "F", "G", "H", "I"] },
+    { "id": 27, "part": 3, "kind": "choice", "prompt": "smart mirrors in bathrooms", "options": ["A", "B", "C", "D", "E", "F", "G", "H", "I"] },
+    { "id": 28, "part": 3, "kind": "choice", "prompt": "bike sheds with charging points", "options": ["A", "B", "C", "D", "E", "F", "G", "H", "I"] },
+    { "id": 29, "part": 3, "kind": "choice", "prompt": "restriction of cars to certain areas", "options": ["A", "B", "C", "D", "E", "F", "G", "H", "I"] },
+    { "id": 30, "part": 3, "kind": "choice", "prompt": "communal vegetable plots", "options": ["A", "B", "C", "D", "E", "F", "G", "H", "I"] },
+    { "id": 31, "part": 4, "kind": "text", "prompt": "Surgery may cause unwelcome changes to patients' … ", "wordLimit": 1 },
+    { "id": 32, "part": 4, "kind": "text", "prompt": "A study reviewed data from about 100 … ", "wordLimit": 1 },
+    { "id": 33, "part": 4, "kind": "text", "prompt": "The patients all listened to music with a … effect", "wordLimit": 1 },
+    { "id": 34, "part": 4, "kind": "text", "prompt": "The music was mostly played through music … ", "wordLimit": 1 },
+    { "id": 35, "part": 4, "kind": "text", "prompt": "Patients reported an absence or low levels of … ", "wordLimit": 1 },
+    { "id": 36, "part": 4, "kind": "text", "prompt": "Patients played music needed less … than those who weren't", "wordLimit": 1 },
+    { "id": 37, "part": 4, "kind": "text", "prompt": "Best results when patients were played music while they were … ", "wordLimit": 1 },
+    { "id": 38, "part": 4, "kind": "text", "prompt": "Music was effective because it served as a … ", "wordLimit": 1 },
+    { "id": 39, "part": 4, "kind": "text", "prompt": "Recommend playing music or sounds from … to all surgical patients", "wordLimit": 1 },
+    { "id": 40, "part": 4, "kind": "text", "prompt": "A future study will investigate the best … for the music", "wordLimit": 1 }
+  ]
+}

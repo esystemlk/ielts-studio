@@ -1,0 +1,48 @@
+import 'server-only';
+
+// Answer key for Cambridge IELTS 20 · Listening Test 2, transcribed from the
+// owner-supplied material. Matching is case/whitespace-insensitive and accepts
+// the listed variants (see ielts-reading/grading.ts). The box-matching slots
+// (Q11–16, A–I and Q21–25, A–G) take a single letter each.
+export const answerKey: Record<string, string[]> = {
+  "1": ["break"],
+  "2": ["time"],
+  "3": ["shower"],
+  "4": ["money"],
+  "5": ["memory"],
+  "6": ["lifting"],
+  "7": ["fall"],
+  "8": ["taxi"],
+  "9": ["insurance"],
+  "10": ["stress"],
+  "11": ["D"],
+  "12": ["I"],
+  "13": ["H"],
+  "14": ["E"],
+  "15": ["A"],
+  "16": ["B"],
+  "17": ["B"],
+  "18": ["A"],
+  "19": ["B"],
+  "20": ["A"],
+  "21": ["D"],
+  "22": ["G"],
+  "23": ["B"],
+  "24": ["A"],
+  "25": ["E"],
+  "26": ["C"],
+  "27": ["A"],
+  "28": ["A"],
+  "29": ["B"],
+  "30": ["C"],
+  "31": ["photos", "photographs", "pictures"],
+  "32": ["vegan"],
+  "33": ["chefs", "cooks"],
+  "34": ["journalists", "reporters"],
+  "35": ["health"],
+  "36": ["coffee"],
+  "37": ["environment"],
+  "38": ["reputation"],
+  "39": ["price", "cost"],
+  "40": ["soil"]
+};

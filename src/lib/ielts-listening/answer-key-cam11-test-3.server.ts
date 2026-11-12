@@ -1,0 +1,47 @@
+import 'server-only';
+
+// Answer key for Cambridge IELTS 11 · Listening Test 3, transcribed from the
+// owner-supplied material. Matching is case/whitespace-insensitive and accepts
+// the listed variants (see ielts-reading/grading.ts).
+export const answerKey: Record<string, string[]> = {
+  "1": ["B"],
+  "2": ["C"],
+  "3": ["B"],
+  "4": ["A"],
+  "5": ["C"],
+  "6": ["A"],
+  "7": ["birds"],
+  "8": ["flowers"],
+  "9": ["mushrooms"],
+  "10": ["river"],
+  "11": ["C"],
+  "12": ["B"],
+  "13": ["B"],
+  "14": ["A"],
+  "15": ["C"],
+  "16": ["G"],
+  "17": ["A"],
+  "18": ["C"],
+  "19": ["B"],
+  "20": ["F"],
+  "21": ["cave"],
+  "22": ["tiger"],
+  "23": ["dancing"],
+  "24": ["crying"],
+  "25": ["grass"],
+  "26": ["scarf"],
+  "27": ["A"],
+  "28": ["C"],
+  "29": ["D"],
+  "30": ["B"],
+  "31": ["attitude", "attitudes"],
+  "32": ["numbers"],
+  "33": ["time", "minutes"],
+  "34": ["software"],
+  "35": ["patients"],
+  "36": ["emotions", "emotion"],
+  "37": ["income"],
+  "38": ["comfortable"],
+  "39": ["observation"],
+  "40": ["analysis"]
+};

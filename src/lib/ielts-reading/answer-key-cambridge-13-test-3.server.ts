@@ -1,0 +1,47 @@
+import 'server-only';
+
+// Answer key for Cambridge IELTS 13 · Academic Reading Test 3, transcribed from
+// the owner-supplied material. Matching is case/whitespace-insensitive and
+// accepts the listed variants (see grading.ts).
+export const answerKey: Record<string, string[]> = {
+  "1": ["furniture"],
+  "2": ["sugar"],
+  "3": ["ropes"],
+  "4": ["charcoal"],
+  "5": ["bowls"],
+  "6": ["hormones"],
+  "7": ["cosmetics"],
+  "8": ["dynamite"],
+  "9": ["FALSE"],
+  "10": ["FALSE"],
+  "11": ["NOT GIVEN"],
+  "12": ["TRUE"],
+  "13": ["NOT GIVEN"],
+  "14": ["B"],
+  "15": ["C"],
+  "16": ["A"],
+  "17": ["B"],
+  "18": ["recording devices"],
+  "19": ["fathers", "dads"],
+  "20": ["bridge hypothesis"],
+  "21": ["repertoire"],
+  "22": ["vests", "audio-recording vests"],
+  "23": ["vocabulary"],
+  "24": ["F"],
+  "25": ["A"],
+  "26": ["E"],
+  "27": ["C"],
+  "28": ["H"],
+  "29": ["A"],
+  "30": ["B"],
+  "31": ["D"],
+  "32": ["shells"],
+  "33": ["lake"],
+  "34": ["rainfall"],
+  "35": ["grains"],
+  "36": ["pottery"],
+  "37": ["B"],
+  "38": ["A"],
+  "39": ["D"],
+  "40": ["A"]
+};

@@ -1,0 +1,47 @@
+import 'server-only';
+
+// Answer key for Cambridge IELTS 18 · Academic Reading Test 1, transcribed from
+// the owner-supplied material. Matching is case/whitespace-insensitive and
+// accepts the listed variants (see grading.ts).
+export const answerKey: Record<string, string[]> = {
+  "1": ["lettuces"],
+  "2": ["1,000 kg", "1000 kg"],
+  "3": ["consumption", "food consumption"],
+  "4": ["pesticides"],
+  "5": ["journeys"],
+  "6": ["producers"],
+  "7": ["flavour", "flavor"],
+  "8": ["TRUE"],
+  "9": ["NOT GIVEN"],
+  "10": ["FALSE"],
+  "11": ["TRUE"],
+  "12": ["FALSE"],
+  "13": ["NOT GIVEN"],
+  "14": ["B"],
+  "15": ["A"],
+  "16": ["C"],
+  "17": ["E"],
+  "18": ["B"],
+  "19": ["B"],
+  "20": ["C"],
+  "21": ["C"],
+  "22": ["fire"],
+  "23": ["nutrients"],
+  "24": ["cavities"],
+  "25": ["hawthorn"],
+  "26": ["rare"],
+  "27": ["C"],
+  "28": ["F"],
+  "29": ["A"],
+  "30": ["E"],
+  "31": ["B"],
+  "32": ["sustainability"],
+  "33": ["fuel"],
+  "34": ["explosions"],
+  "35": ["bankrupt"],
+  "36": ["C"],
+  "37": ["D"],
+  "38": ["B"],
+  "39": ["D"],
+  "40": ["A"]
+};

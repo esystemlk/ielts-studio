@@ -1,0 +1,47 @@
+import 'server-only';
+
+// Answer key for Cambridge IELTS 12 · Academic Reading Test 1, transcribed from
+// the owner-supplied material. Matching is case/whitespace-insensitive and
+// accepts the listed variants (see grading.ts).
+export const answerKey: Record<string, string[]> = {
+  "1": ["NOT GIVEN"],
+  "2": ["FALSE"],
+  "3": ["FALSE"],
+  "4": ["TRUE"],
+  "5": ["TRUE"],
+  "6": ["taste"],
+  "7": ["cheaper"],
+  "8": ["convenient"],
+  "9": ["image"],
+  "10": ["sustainable"],
+  "11": ["recycled"],
+  "12": ["biodiversity"],
+  "13": ["desertification"],
+  "14": ["antiques"],
+  "15": ["triumph"],
+  "16": ["information"],
+  "17": ["contact", "meetings"],
+  "18": ["hunt", "desire"],
+  "19": ["aimless", "empty"],
+  "20": ["educational"],
+  "21": ["trainspotting"],
+  "22": ["NOT GIVEN"],
+  "23": ["FALSE"],
+  "24": ["NOT GIVEN"],
+  "25": ["TRUE"],
+  "26": ["TRUE"],
+  "27": ["vi"],
+  "28": ["viii"],
+  "29": ["ii"],
+  "30": ["iv"],
+  "31": ["iii"],
+  "32": ["vii"],
+  "33": ["fire science"],
+  "34": ["investigators"],
+  "35": ["evidence"],
+  "36": ["prosecution"],
+  "37": ["NOT GIVEN"],
+  "38": ["YES"],
+  "39": ["NO"],
+  "40": ["NO"]
+};

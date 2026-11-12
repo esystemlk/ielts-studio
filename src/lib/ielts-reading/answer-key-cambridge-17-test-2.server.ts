@@ -1,0 +1,47 @@
+import 'server-only';
+
+// Answer key for Cambridge IELTS 17 · Academic Reading Test 2, transcribed from
+// the owner-supplied material. Matching is case/whitespace-insensitive and
+// accepts the listed variants (see grading.ts).
+export const answerKey: Record<string, string[]> = {
+  "1": ["rock"],
+  "2": ["cave"],
+  "3": ["clay"],
+  "4": ["Essenes"],
+  "5": ["Hebrew"],
+  "6": ["NOT GIVEN"],
+  "7": ["FALSE"],
+  "8": ["TRUE"],
+  "9": ["TRUE"],
+  "10": ["FALSE"],
+  "11": ["FALSE"],
+  "12": ["TRUE"],
+  "13": ["NOT GIVEN"],
+  "14": ["C"],
+  "15": ["B"],
+  "16": ["E"],
+  "17": ["A"],
+  "18": ["C"],
+  "19": ["B"],
+  "20": ["D"],
+  "21": ["A"],
+  "22": ["C"],
+  "23": ["A"],
+  "24": ["flavour", "flavor"],
+  "25": ["size"],
+  "26": ["salt"],
+  "27": ["D"],
+  "28": ["A"],
+  "29": ["A"],
+  "30": ["C"],
+  "31": ["A"],
+  "32": ["NO"],
+  "33": ["NOT GIVEN"],
+  "34": ["YES"],
+  "35": ["NO"],
+  "36": ["NOT GIVEN"],
+  "37": ["F"],
+  "38": ["D"],
+  "39": ["E"],
+  "40": ["B"]
+};

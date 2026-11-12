@@ -1,0 +1,47 @@
+import 'server-only';
+
+// Answer key for Cambridge IELTS 15 · Academic Reading Test 2, transcribed from
+// the owner-supplied material. Matching is case/whitespace-insensitive and
+// accepts the listed variants (see grading.ts).
+export const answerKey: Record<string, string[]> = {
+  "1": ["B"],
+  "2": ["C"],
+  "3": ["F"],
+  "4": ["D"],
+  "5": ["E"],
+  "6": ["A"],
+  "7": ["safety"],
+  "8": ["traffic"],
+  "9": ["carriageway"],
+  "10": ["mobile"],
+  "11": ["dangerous"],
+  "12": ["communities"],
+  "13": ["healthy"],
+  "14": ["B"],
+  "15": ["A"],
+  "16": ["D"],
+  "17": ["A"],
+  "18": ["genetic traits"],
+  "19": ["heat loss"],
+  "20": ["ears"],
+  "21": ["fat", "insulating fat"],
+  "22": ["emissions", "carbon emissions"],
+  "23": ["B"],
+  "24": ["C"],
+  "25": ["A"],
+  "26": ["C"],
+  "27": ["C"],
+  "28": ["A"],
+  "29": ["B"],
+  "30": ["B"],
+  "31": ["D"],
+  "32": ["F"],
+  "33": ["H"],
+  "34": ["C"],
+  "35": ["D"],
+  "36": ["E"],
+  "37": ["NOT GIVEN"],
+  "38": ["FALSE"],
+  "39": ["FALSE"],
+  "40": ["FALSE"]
+};

@@ -1,0 +1,88 @@
+{
+  "id": "cambridge-20-test-2",
+  "title": "Cambridge IELTS 20 · Listening Test 2",
+  "version": 1,
+  "endpoint": "/api/ielts-listening/cambridge-20-test-2",
+  "sections": [
+    { "part": 1, "title": "Part 1", "subtitle": "Support for carers of elderly people", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-20%2Ftest-2%2Fpart-1.mp3?alt=media" },
+    { "part": 2, "title": "Part 2", "subtitle": "Community volunteering in Elmley", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-20%2Ftest-2%2Fpart-2.mp3?alt=media" },
+    { "part": 3, "title": "Part 3", "subtitle": "Human geography assignment", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-20%2Ftest-2%2Fpart-3.mp3?alt=media" },
+    { "part": 4, "title": "Part 4", "subtitle": "Developing food trends", "audio": "https://firebasestorage.googleapis.com/v0/b/smart-labs-ekk8j.firebasestorage.app/o/ielts-listening%2Fcambridge-20%2Ftest-2%2Fpart-4.mp3?alt=media" }
+  ],
+  "groups": {
+    "1": { "title": "Questions 1–10 · Note completion", "instructions": "Complete the notes below (Local councils can arrange practical support to help those caring for elderly people at home). Write ONE WORD AND/OR A NUMBER for each answer." },
+    "11": {
+      "title": "Questions 11–16 · Matching",
+      "instructions": "What is the role of the volunteers in each of the following activities? Choose SIX answers from the box and drag the correct letter, A–I, onto each activity — or tap an activity, then tap an option.",
+      "matchOptions": [
+        { "letter": "A", "text": "providing entertainment" },
+        { "letter": "B", "text": "providing publicity about a council service" },
+        { "letter": "C", "text": "contacting local businesses" },
+        { "letter": "D", "text": "giving advice to visitors" },
+        { "letter": "E", "text": "collecting feedback on events" },
+        { "letter": "F", "text": "selling tickets" },
+        { "letter": "G", "text": "introducing guest speakers at an event" },
+        { "letter": "H", "text": "encouraging cooperation between local organisations" },
+        { "letter": "I", "text": "helping people find their seats" }
+      ]
+    },
+    "17": { "title": "Questions 17–20 · Multiple choice", "instructions": "Choose the correct letter, A, B or C." },
+    "21": {
+      "title": "Questions 21–25 · Matching",
+      "instructions": "What is Rosie and Colin's opinion about each of the following aspects of human geography? Choose FIVE answers from the box and drag the correct letter, A–G, onto each aspect — or tap an aspect, then tap an option.",
+      "matchOptions": [
+        { "letter": "A", "text": "The information given about this was too vague." },
+        { "letter": "B", "text": "This may not be relevant to their course." },
+        { "letter": "C", "text": "This will involve only a small number of statistics." },
+        { "letter": "D", "text": "It will be easy to find facts about this." },
+        { "letter": "E", "text": "The facts about this may not be reliable." },
+        { "letter": "F", "text": "No useful research has been done on this." },
+        { "letter": "G", "text": "The information provided about this was interesting." }
+      ]
+    },
+    "26": { "title": "Questions 26–30 · Multiple choice", "instructions": "Choose the correct letter, A, B or C." },
+    "31": { "title": "Questions 31–40 · Note completion", "instructions": "Complete the notes below (Developing Food Trends). Write ONE WORD ONLY for each answer." }
+  },
+  "questions": [
+    { "id": 1, "part": 1, "kind": "text", "prompt": "Practical support can give the carer time for other responsibilities and a … ", "wordLimit": 1 },
+    { "id": 2, "part": 1, "kind": "text", "prompt": "Assessment of mother's needs: how much … the caring involves", "wordLimit": 1 },
+    { "id": 3, "part": 1, "kind": "text", "prompt": "Types of tasks involved: helping her have a … ", "wordLimit": 1 },
+    { "id": 4, "part": 1, "kind": "text", "prompt": "Types of tasks involved: dealing with … ", "wordLimit": 1 },
+    { "id": 5, "part": 1, "kind": "text", "prompt": "Especially difficult aspects: loss of … ", "wordLimit": 1 },
+    { "id": 6, "part": 1, "kind": "text", "prompt": "Especially difficult aspects: … her (physically)", "wordLimit": 1 },
+    { "id": 7, "part": 1, "kind": "text", "prompt": "Especially difficult aspects: preventing a … ", "wordLimit": 1 },
+    { "id": 8, "part": 1, "kind": "text", "prompt": "Support for carers — transport costs, e.g. cost of a … ", "wordLimit": 1 },
+    { "id": 9, "part": 1, "kind": "text", "prompt": "Support for carers — car-related costs, e.g. fuel and … ", "wordLimit": 1 },
+    { "id": 10, "part": 1, "kind": "text", "prompt": "Support for carers — help to reduce … ", "wordLimit": 1 },
+    { "id": 11, "part": 2, "kind": "choice", "prompt": "walking around the town centre", "options": ["A", "B", "C", "D", "E", "F", "G", "H", "I"] },
+    { "id": 12, "part": 2, "kind": "choice", "prompt": "helping at concerts", "options": ["A", "B", "C", "D", "E", "F", "G", "H", "I"] },
+    { "id": 13, "part": 2, "kind": "choice", "prompt": "getting involved with community groups", "options": ["A", "B", "C", "D", "E", "F", "G", "H", "I"] },
+    { "id": 14, "part": 2, "kind": "choice", "prompt": "helping with a magazine", "options": ["A", "B", "C", "D", "E", "F", "G", "H", "I"] },
+    { "id": 15, "part": 2, "kind": "choice", "prompt": "participating at lunches for retired people", "options": ["A", "B", "C", "D", "E", "F", "G", "H", "I"] },
+    { "id": 16, "part": 2, "kind": "choice", "prompt": "helping with the website", "options": ["A", "B", "C", "D", "E", "F", "G", "H", "I"] },
+    { "id": 17, "part": 2, "kind": "choice", "prompt": "Which event requires the largest number of volunteers?", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "the music festival" }, { "letter": "B", "text": "the science festival" }, { "letter": "C", "text": "the book festival" }] },
+    { "id": 18, "part": 2, "kind": "choice", "prompt": "What is the most important requirement for volunteers at the festivals?", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "interpersonal skills" }, { "letter": "B", "text": "personal interest in the event" }, { "letter": "C", "text": "flexibility" }] },
+    { "id": 19, "part": 2, "kind": "choice", "prompt": "New volunteers will start working in the week beginning", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "2 September" }, { "letter": "B", "text": "9 September" }, { "letter": "C", "text": "23 September" }] },
+    { "id": 20, "part": 2, "kind": "choice", "prompt": "What is the next annual event for volunteers?", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "a boat trip" }, { "letter": "B", "text": "a barbecue" }, { "letter": "C", "text": "a party" }] },
+    { "id": 21, "part": 3, "kind": "choice", "prompt": "Population", "options": ["A", "B", "C", "D", "E", "F", "G"] },
+    { "id": 22, "part": 3, "kind": "choice", "prompt": "Health", "options": ["A", "B", "C", "D", "E", "F", "G"] },
+    { "id": 23, "part": 3, "kind": "choice", "prompt": "Economies", "options": ["A", "B", "C", "D", "E", "F", "G"] },
+    { "id": 24, "part": 3, "kind": "choice", "prompt": "Culture", "options": ["A", "B", "C", "D", "E", "F", "G"] },
+    { "id": 25, "part": 3, "kind": "choice", "prompt": "Poverty", "options": ["A", "B", "C", "D", "E", "F", "G"] },
+    { "id": 26, "part": 3, "kind": "choice", "prompt": "Rosie says that in her own city the main problem is", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "crime." }, { "letter": "B", "text": "housing." }, { "letter": "C", "text": "unemployment." }] },
+    { "id": 27, "part": 3, "kind": "choice", "prompt": "What recent additions to the outskirts of their cities are both students happy about?", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "conference centres" }, { "letter": "B", "text": "sports centres" }, { "letter": "C", "text": "retail centres" }] },
+    { "id": 28, "part": 3, "kind": "choice", "prompt": "The students agree that developing disused industrial sites may", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "have unexpected costs." }, { "letter": "B", "text": "damage the urban environment." }, { "letter": "C", "text": "destroy valuable historical buildings." }] },
+    { "id": 29, "part": 3, "kind": "choice", "prompt": "The students will mention Masdar City as an example of an attempt to achieve", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "daily collections for waste recycling." }, { "letter": "B", "text": "sustainable energy use." }, { "letter": "C", "text": "free transport for everyone." }] },
+    { "id": 30, "part": 3, "kind": "choice", "prompt": "When discussing the ecotown of Greenhill Abbots, Colin is uncertain about", "options": ["A", "B", "C"], "choices": [{ "letter": "A", "text": "what its objectives were." }, { "letter": "B", "text": "why there was opposition to it." }, { "letter": "C", "text": "how much of it has actually been built." }] },
+    { "id": 31, "part": 4, "kind": "text", "prompt": "The growth in interest started with … of food being shared on social media", "wordLimit": 1 },
+    { "id": 32, "part": 4, "kind": "text", "prompt": "Sales of … food brands have grown rapidly this way", "wordLimit": 1 },
+    { "id": 33, "part": 4, "kind": "text", "prompt": "Famous … are influential", "wordLimit": 1 },
+    { "id": 34, "part": 4, "kind": "text", "prompt": "The avocado: … were invited to visit growers in South Africa", "wordLimit": 1 },
+    { "id": 35, "part": 4, "kind": "text", "prompt": "The avocado: advertising focused on its … benefits", "wordLimit": 1 },
+    { "id": 36, "part": 4, "kind": "text", "prompt": "Oat milk: promotion in the USA through … shops reduced the need for advertising", "wordLimit": 1 },
+    { "id": 37, "part": 4, "kind": "text", "prompt": "Oat milk: appealed to consumers who are concerned about the … ", "wordLimit": 1 },
+    { "id": 38, "part": 4, "kind": "text", "prompt": "Norwegian skrei: has helped strengthen the … of Norwegian seafood", "wordLimit": 1 },
+    { "id": 39, "part": 4, "kind": "text", "prompt": "Quinoa: its success led to an increase in its … ", "wordLimit": 1 },
+    { "id": 40, "part": 4, "kind": "text", "prompt": "Quinoa: overuse of resources resulted in poor quality … ", "wordLimit": 1 }
+  ]
+}

@@ -1,0 +1,47 @@
+import 'server-only';
+
+// Answer key for Cambridge IELTS 13 · Listening Test 3, transcribed from the
+// owner-supplied material. Matching is case/whitespace-insensitive and accepts
+// the listed variants (see ielts-reading/grading.ts).
+export const answerKey: Record<string, string[]> = {
+  "1": ["850"],
+  "2": ["bike", "bicycle"],
+  "3": ["parking"],
+  "4": ["30", "thirty"],
+  "5": ["weekend", "weekends"],
+  "6": ["cinema"],
+  "7": ["hospital"],
+  "8": ["dentist"],
+  "9": ["Thursday"],
+  "10": ["café", "cafe"],
+  "11": ["F"],
+  "12": ["D"],
+  "13": ["A"],
+  "14": ["B"],
+  "15": ["C"],
+  "16": ["G"],
+  "17": ["B", "C"],
+  "18": ["B", "C"],
+  "19": ["B", "D"],
+  "20": ["B", "D"],
+  "21": ["C"],
+  "22": ["A"],
+  "23": ["A"],
+  "24": ["B"],
+  "25": ["C"],
+  "26": ["F"],
+  "27": ["H"],
+  "28": ["D"],
+  "29": ["A"],
+  "30": ["E"],
+  "31": ["tongue", "tongues"],
+  "32": ["plants"],
+  "33": ["snakes"],
+  "34": ["sky"],
+  "35": ["partner"],
+  "36": ["contact"],
+  "37": ["protection"],
+  "38": ["tail", "tails"],
+  "39": ["steps"],
+  "40": ["injury", "injuries"]
+};

@@ -1,0 +1,47 @@
+import 'server-only';
+
+// Answer key for Cambridge IELTS 12 · Academic Reading Test 4, transcribed from
+// the owner-supplied material. Matching is case/whitespace-insensitive and
+// accepts the listed variants (see grading.ts).
+export const answerKey: Record<string, string[]> = {
+  "1": ["obsidian"],
+  "2": ["spears"],
+  "3": ["beads"],
+  "4": ["impurities"],
+  "5": ["Romans"],
+  "6": ["lead"],
+  "7": ["clouding"],
+  "8": ["taxes"],
+  "9": ["TRUE"],
+  "10": ["FALSE"],
+  "11": ["NOT GIVEN"],
+  "12": ["TRUE"],
+  "13": ["FALSE"],
+  "14": ["D"],
+  "15": ["A"],
+  "16": ["C"],
+  "17": ["A"],
+  "18": ["C"],
+  "19": ["E"],
+  "20": ["D"],
+  "21": ["F"],
+  "22": ["A"],
+  "23": ["NO"],
+  "24": ["NOT GIVEN"],
+  "25": ["YES"],
+  "26": ["YES"],
+  "27": ["iv"],
+  "28": ["ii"],
+  "29": ["vi"],
+  "30": ["viii"],
+  "31": ["vii"],
+  "32": ["i"],
+  "33": ["iii"],
+  "34": ["YES"],
+  "35": ["NOT GIVEN"],
+  "36": ["NO"],
+  "37": ["NO"],
+  "38": ["information"],
+  "39": ["financial"],
+  "40": ["shareholders", "investors"]
+};

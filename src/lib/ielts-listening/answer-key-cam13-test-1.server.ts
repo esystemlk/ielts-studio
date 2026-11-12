@@ -1,0 +1,47 @@
+import 'server-only';
+
+// Answer key for Cambridge IELTS 13 · Listening Test 1, transcribed from the
+// owner-supplied material. Matching is case/whitespace-insensitive and accepts
+// the listed variants (see ielts-reading/grading.ts).
+export const answerKey: Record<string, string[]> = {
+  "1": ["choose"],
+  "2": ["private"],
+  "3": ["20%", "20 percent"],
+  "4": ["healthy"],
+  "5": ["bones"],
+  "6": ["lecture"],
+  "7": ["Arretsa"],
+  "8": ["vegetarian"],
+  "9": ["market"],
+  "10": ["knife"],
+  "11": ["B"],
+  "12": ["C"],
+  "13": ["B"],
+  "14": ["E"],
+  "15": ["D"],
+  "16": ["B"],
+  "17": ["G"],
+  "18": ["C"],
+  "19": ["H"],
+  "20": ["I"],
+  "21": ["A"],
+  "22": ["C"],
+  "23": ["B"],
+  "24": ["C"],
+  "25": ["B"],
+  "26": ["G"],
+  "27": ["C"],
+  "28": ["H"],
+  "29": ["A"],
+  "30": ["E"],
+  "31": ["crow"],
+  "32": ["cliffs"],
+  "33": ["speed"],
+  "34": ["brain", "brains"],
+  "35": ["food"],
+  "36": ["behaviour", "behavior"],
+  "37": ["new"],
+  "38": ["stress"],
+  "39": ["tail", "tails"],
+  "40": ["permanent"]
+};
