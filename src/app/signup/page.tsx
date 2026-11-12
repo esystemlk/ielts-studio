@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 import { GoogleAuthProvider, createUserWithEmailAndPassword, signInWithPopup, updateProfile, type User } from 'firebase/auth';
 import { useAuth, useFirestore, useUser } from '@/firebase';
 import { ensureStudioProfile, type StudioProfileExtras } from '@/lib/studio-auth';
+import { WordsReveal, RotatingWord } from '@/components/motion';
 import { AuthFooter, GoogleIcon, Wordmark, authErrorMessage } from '@/components/ui';
 
 const BANDS = [5.5, 6, 6.5, 7, 7.5, 8, 8.5];
@@ -43,7 +44,7 @@ export default function StudioSignupPage() {
             await finish(cred.user, form.name.trim());
           });
         }}>
-          <h1>Create your account</h1>
+          <WordsReveal as="h1" text="Create your account" />
           <p>One account for IELTS Studio and Smart Labs. Already have one? <Link href="/login">Sign in</Link> instead.</p>
 
           <button type="button" className="btn secondary block" disabled={busy} onClick={() => run(async () => finish((await signInWithPopup(auth, new GoogleAuthProvider())).user))}>
@@ -88,8 +89,10 @@ export default function StudioSignupPage() {
       </main>
 
       <aside className="auth-aside" aria-label="What is included">
+        <span className="aside-ghost" aria-hidden="true">7.5</span>
         <p className="label" style={{ margin: '0 0 10px' }}>What you get</p>
-        <h2>Everything you need for Listening, Reading and Writing, in one place.</h2>
+        <p className="aside-rotate">Practise <RotatingWord words={['Listening', 'Reading', 'Writing', 'Speaking']} /> the way the test marks it.</p>
+        <WordsReveal as="h2" delay={0.2} text="Everything you need for Listening, Reading and Writing, in one place." />
         <div className="band-scale">
           {/* eslint-disable @next/next/no-img-element */}
           <div><img className="aside-ic" src="/studio/mocks-dark.png" alt="" width={256} height={256} /><p><strong>4 full mock tests</strong>Timed like test day, with a band for each skill and an overall average.</p></div>

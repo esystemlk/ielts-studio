@@ -7,6 +7,7 @@ import { GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup, type U
 import { useAuth, useFirestore, useUser } from '@/firebase';
 import { ensureStudioProfile } from '@/lib/studio-auth';
 import { safeRedirect } from '@/lib/studio';
+import { WordsReveal, RotatingWord } from '@/components/motion';
 import { AuthFooter, GoogleIcon, Wordmark, authErrorMessage } from '@/components/ui';
 
 export default function StudioLoginPage() {
@@ -34,7 +35,7 @@ export default function StudioLoginPage() {
       <main className="auth-main">
         <header><Wordmark /></header>
         <form className="auth-form" onSubmit={e => { e.preventDefault(); void run(async () => finish((await signInWithEmailAndPassword(auth, email.trim(), password)).user)); }}>
-          <h1>Welcome back</h1>
+          <WordsReveal as="h1" text="Welcome back" />
           <p>Sign in to continue your practice. Your Smart Labs account works here too.</p>
 
           <button type="button" className="btn secondary block" disabled={busy} onClick={() => run(async () => finish((await signInWithPopup(auth, new GoogleAuthProvider())).user))}>
@@ -58,8 +59,10 @@ export default function StudioLoginPage() {
       </main>
 
       <aside className="auth-aside" aria-label="About IELTS band scores">
+        <span className="aside-ghost" aria-hidden="true">9.0</span>
         <p className="label" style={{ margin: '0 0 10px' }}>How your work is marked</p>
-        <h2>Practise against the same 9-band scale the test uses.</h2>
+        <p className="aside-rotate">Practise <RotatingWord words={['Listening', 'Reading', 'Writing', 'Speaking']} /> the way the test marks it.</p>
+        <WordsReveal as="h2" delay={0.2} text="Practise against the same 9-band scale the test uses." />
         <div className="band-scale">
           <div><b className="num">8</b><p><strong>Very good user</strong>Handles complex language well, with only occasional slips.</p></div>
           <div><b className="num">7</b><p><strong>Good user</strong>Copes with detailed reasoning; some mistakes in unfamiliar situations.</p></div>

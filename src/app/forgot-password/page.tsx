@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { sendPasswordResetEmail } from 'firebase/auth';
 import { useAuth } from '@/firebase';
+import { WordsReveal, RotatingWord } from '@/components/motion';
 import { AuthFooter, Wordmark, authErrorMessage } from '@/components/ui';
 
 export default function StudioForgotPasswordPage() {
@@ -20,7 +21,7 @@ export default function StudioForgotPasswordPage() {
         <div className="auth-form">
           {sent ? (
             <div role="status">
-              <h1>Check your email</h1>
+              <WordsReveal as="h1" text="Check your email" />
               <p>If an account uses <b>{email}</b>, we&rsquo;ve sent a link to reset its password. It works for both IELTS Studio and Smart Labs.</p>
               <Link className="btn block" href="/login">Back to sign in</Link>
             </div>
@@ -32,7 +33,7 @@ export default function StudioForgotPasswordPage() {
               catch (err) { if ((err as { code?: string }).code === 'auth/user-not-found') setSent(true); else setError(authErrorMessage(err)); }
               finally { setBusy(false); }
             }}>
-              <h1>Reset your password</h1>
+              <WordsReveal as="h1" text="Reset your password" />
               <p>Enter the email you sign in with and we&rsquo;ll send you a reset link.</p>
               <div className="field">
                 <label htmlFor="email">Email</label>
@@ -47,8 +48,9 @@ export default function StudioForgotPasswordPage() {
         <AuthFooter />
       </main>
       <aside className="auth-aside" aria-hidden="true">
+        <span className="aside-ghost">6.5</span>
         <p className="label" style={{ margin: '0 0 10px' }}>One account</p>
-        <h2>Your IELTS Studio password is the same as your Smart Labs password.</h2>
+        <WordsReveal as="h2" text="Your IELTS Studio password is the same as your Smart Labs password." />
       </aside>
     </div>
   );

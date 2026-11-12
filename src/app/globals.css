@@ -86,6 +86,36 @@ a { color: inherit; }
 .band-scale p { margin: 0; color: #c4c4c4; font-size: 14px; }
 .band-scale strong { display: block; color: #fff; font-weight: 500; }
 .google-g { width: 18px; height: 18px; }
+
+/* Auth motion: words rise in, the aside glows and its rows slide in, one word rotates. */
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.words-reveal .w { display: inline-block; opacity: 0; animation: word-rise .7s cubic-bezier(.2,.7,.2,1) forwards; }
+@keyframes word-rise { from { opacity: 0; transform: translateY(.55em) rotate(2deg); filter: blur(6px); } to { opacity: 1; transform: none; filter: none; } }
+.auth-form > p, .auth-form > .btn, .auth-form > .divider, .auth-form > .field { animation: fade-up .6s .35s cubic-bezier(.2,.7,.2,1) both; }
+.auth-form > .field + .field { animation-delay: .45s; }
+@keyframes fade-up { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+.auth-aside { position: relative; overflow: hidden; isolation: isolate; }
+.auth-aside::before, .auth-aside::after { content: ''; position: absolute; z-index: -1; border-radius: 50%; filter: blur(60px); }
+.auth-aside::before { width: 420px; height: 420px; right: -140px; top: -120px; background: rgba(208, 16, 27, .45); animation: glow-drift 14s ease-in-out infinite alternate; }
+.auth-aside::after { width: 300px; height: 300px; left: -120px; bottom: -120px; background: rgba(255, 77, 85, .18); animation: glow-drift 18s ease-in-out infinite alternate-reverse; }
+@keyframes glow-drift { to { transform: translate(-80px, 90px) scale(1.15); } }
+.aside-ghost { position: absolute; z-index: -1; right: 4%; bottom: -6%; font: 500 clamp(160px, 22vw, 300px)/1 var(--serif); color: transparent; -webkit-text-stroke: 1px rgba(255,255,255,.09); animation: ghost-float 9s ease-in-out infinite alternate; pointer-events: none; user-select: none; }
+@keyframes ghost-float { to { transform: translateY(-24px); } }
+.aside-rotate { font: 500 15px/1.4 var(--sans); color: #c4c4c4; margin: 0 0 18px; }
+.rotating { display: inline-block; position: relative; color: #fff; font-weight: 600; }
+.rotating .rw { display: inline-block; animation: rw-in .5s cubic-bezier(.2,.7,.2,1) both; }
+.rotating .rw::after { content: ''; position: absolute; left: 0; right: 0; bottom: -3px; height: 2px; border-radius: 2px; background: #ff4d55; transform-origin: left; animation: rw-line 2.4s ease-in-out both; }
+@keyframes rw-in { from { opacity: 0; transform: translateY(70%); filter: blur(4px); } to { opacity: 1; transform: none; filter: none; } }
+@keyframes rw-line { 0% { transform: scaleX(0); } 25%, 80% { transform: scaleX(1); } 100% { transform: scaleX(0); transform-origin: right; } }
+.auth-aside .band-scale > div { animation: row-in .6s cubic-bezier(.2,.7,.2,1) both; }
+.auth-aside .band-scale > div:nth-child(1) { animation-delay: .7s; }
+.auth-aside .band-scale > div:nth-child(2) { animation-delay: .82s; }
+.auth-aside .band-scale > div:nth-child(3) { animation-delay: .94s; }
+.auth-aside .band-scale > div:nth-child(4) { animation-delay: 1.06s; }
+@keyframes row-in { from { opacity: 0; transform: translateX(24px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .words-reveal .w, .auth-form > *, .auth-aside .band-scale > div, .rotating .rw, .rotating .rw::after, .auth-aside::before, .auth-aside::after, .aside-ghost { animation: none !important; opacity: 1; }
+}
 @media (max-width: 860px) {
   .auth { grid-template-columns: 1fr; }
   .auth-aside { margin: 0 16px 16px; }
