@@ -2,7 +2,7 @@
 // Shared IELTS Studio pieces: logo, generated icons (with dark-mode variants) and the Google button.
 import Link from 'next/link';
 
-export type StudioIcon = 'logo' | 'listening' | 'reading' | 'writing' | 'speaking' | 'mocks' | 'results' | 'credits' | 'badge-free' | 'badge-paid';
+export type StudioIcon = 'logo' | 'listening' | 'reading' | 'writing' | 'speaking' | 'mocks' | 'results' | 'credits' | 'badge-free' | 'badge-paid' | 'signout';
 
 /** Transparent PNG icon; the white-ink "-dark" version is used when the device is in dark mode. */
 export function Pic({ name, className = 'ic', alt = '' }: { name: StudioIcon; className?: string; alt?: string }) {

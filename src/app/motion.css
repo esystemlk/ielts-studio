@@ -106,3 +106,10 @@
 .btn.secondary .signup-ic { background: var(--accent-wash); }
 .signup-btn:hover .signup-ic { transform: rotate(-10deg) scale(1.12); }
 .signup-btn.accent { box-shadow: 0 6px 18px -8px rgba(208,16,27,.7); }
+
+/* Sign out: looks like the other sidebar links, turns red on hover */
+.side nav .nav-button { display: flex; align-items: center; width: 100%; padding: 9px 12px; border: 0; border-radius: var(--radius-sm); background: none; color: var(--ink-2); font: inherit; font-size: 14px; text-align: left; cursor: pointer; transition: background .2s, color .2s, transform .2s; }
+.side nav .nav-button:hover { background: var(--accent-wash); color: var(--accent); transform: translateX(3px); }
+.side nav .nav-button:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; }
+.side nav .nav-button .ic img { transition: transform .3s cubic-bezier(.3,1.6,.5,1); }
+.side nav .nav-button:hover .ic img { transform: translateX(3px); }

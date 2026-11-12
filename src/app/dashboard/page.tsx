@@ -67,7 +67,7 @@ function Dashboard() {
           <Link href="/mocks"><span className="nl"><Pic name="mocks" />Mock tests</span><small>${PLAN_PRICES.mock}</small></Link>
           <p>Account</p>
           <Link href="/"><span className="nl"><Pic name="credits" />Plans</span></Link>
-          <button type="button" className="nav-button" onClick={() => signOut(auth).then(() => router.replace('/login'))}>Sign out</button>
+          <button type="button" className="nav-button" onClick={() => signOut(auth).then(() => router.replace('/login'))}><span className="nl"><Pic name="signout" />Sign out</span></button>
         </nav>
         <div className="me">
           <div className="me-row"><Pic name={badge} className="me-badge" alt={`${planLabel[plan]} plan`} /><div>{profile?.displayName || user?.email}<span>{profile?.ieltsModule === 'general' ? 'General Training' : 'Academic'}{target ? ` · target ${band(target)}` : ''}</span></div></div>
