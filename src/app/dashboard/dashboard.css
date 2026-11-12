@@ -1,0 +1,41 @@
+/* Wide-screen dashboard: content + a right column of image cards. Below 1440px the
+   column drops under the content as a row of cards, so nothing is lost on laptops. */
+.dash-grid { display: grid; grid-template-columns: minmax(0, 1fr); max-width: 1600px; }
+.dash-grid .main { max-width: none; }
+.rail { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; padding: 0 clamp(16px, 4vw, 48px) 64px; align-content: start; }
+@media (min-width: 1440px) {
+  .dash-grid { grid-template-columns: minmax(0, 1fr) 340px; }
+  .rail { grid-template-columns: 1fr; padding: 28px 32px 64px 0; position: sticky; top: 0; max-height: 100vh; overflow: auto; }
+}
+
+.rail-card { display: block; background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); overflow: hidden; text-decoration: none; color: inherit; animation: card-in .7s .45s cubic-bezier(.2,.7,.2,1) both; }
+.rail-card + .rail-card { animation-delay: .55s; }
+.rail-card img { display: block; width: 100%; height: 168px; object-fit: cover; background: #f3f3f3; transition: transform .6s cubic-bezier(.2,.7,.2,1); }
+.rail-card:hover img { transform: scale(1.05); }
+.rail-card > div { padding: 16px 18px 18px; }
+.rail-card .label { margin: 0 0 4px; }
+.rail-card h3 { margin: 0 0 6px; font: 500 19px/1.25 var(--serif); }
+.rail-card p { margin: 0; font-size: 14px; color: var(--ink-2); }
+.rail-card .big { font: 500 30px/1 var(--serif); color: var(--accent); }
+.rail-foot { display: flex; justify-content: space-between; align-items: center; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--rule); font-size: 13px; color: var(--ink-3); }
+.rail-foot b { color: var(--ink); font-size: 15px; }
+.rail-card .go { color: var(--ink-2); transition: transform .25s, color .25s; }
+.rail-card:hover .go { transform: translateX(4px); color: var(--accent); }
+.rail-card.tip { padding: 16px 18px; background: #0d0d0d; color: #fff; border-color: #0d0d0d; position: relative; overflow: hidden; }
+.rail-card.tip::after { content: '“'; position: absolute; right: 10px; bottom: -40px; font: 500 150px/1 var(--serif); color: rgba(255,77,85,.25); }
+.rail-card.tip .label { color: #ff4d55; }
+.rail-card.tip .tip-text { color: #e5e5e5; font: 400 16px/1.5 var(--serif); position: relative; }
+
+/* Hero banner: copy on the left, the study desk artwork on the right. */
+.continue.hero-banner { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); padding: 0; border-left-width: 1px; align-items: stretch; min-height: 240px; }
+.hero-copy { padding: 28px 28px 28px 32px; display: flex; flex-direction: column; justify-content: center; gap: 6px; border-left: 3px solid var(--accent); }
+.hero-copy h3 { font-size: 24px; }
+.hero-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+.hero-art { width: 100%; height: 100%; min-height: 220px; object-fit: cover; object-position: center 55%; display: block; mask-image: linear-gradient(90deg, transparent 0, #000 18%); transition: transform 1.2s cubic-bezier(.2,.7,.2,1); }
+.hero-banner:hover .hero-art { transform: scale(1.03); }
+@media (max-width: 760px) {
+  .continue.hero-banner { grid-template-columns: 1fr; }
+  .hero-art { order: -1; min-height: 0; height: 150px; mask-image: linear-gradient(180deg, #000 70%, transparent); }
+  .hero-copy { padding: 18px 20px 22px; border-left: 0; border-top: 3px solid var(--accent); }
+}
+@media (prefers-reduced-motion: reduce) { .rail-card { animation: none; } .rail-card img, .hero-art { transition: none; } }

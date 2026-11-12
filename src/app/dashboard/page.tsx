@@ -7,6 +7,7 @@ import { signOut } from 'firebase/auth';
 import { collection, doc, getDoc, getDocs, limit, orderBy, query } from 'firebase/firestore';
 import { useAuth, useFirestore, useUser } from '@/firebase';
 import { RequireAuth } from '@/components/require-auth';
+import './dashboard.css';
 import { Pic, Wordmark } from '@/components/ui';
 import { CountUp, WordsReveal } from '@/components/motion';
 import { PLAN_PRICES, planLabel, planOf } from '@/lib/plans';
@@ -14,6 +15,15 @@ import { PLAN_PRICES, planLabel, planOf } from '@/lib/plans';
 type Profile = Record<string, any>; // eslint-disable-line @typescript-eslint/no-explicit-any
 interface MockResult { title: string; overall: number; listening: { band: number }; reading: { band: number }; writing: { band: number } }
 
+const TIPS = [
+  'In Listening, the answers come in the same order as the questions. If you miss one, move on.',
+  'In Reading, skim the passage first for its structure, then scan for the words in each question.',
+  'Writing Task 2 is worth twice as much as Task 1, so give it about 40 minutes.',
+  'Check the word limit: "NO MORE THAN TWO WORDS" means a three-word answer is marked wrong.',
+  'Spelling counts in Listening and Reading. Practise common words like accommodation and environment.',
+  'For True / False / Not Given, Not Given means the passage says nothing about it, not that it is false.',
+  'In Task 1, write an overview of the main trends. It is the single biggest step up in band.',
+];
 const band = (n?: number) => (typeof n === 'number' ? n.toFixed(1) : '—');
 const daysUntil = (iso?: string) => {
   if (!iso) return null;
@@ -77,6 +87,7 @@ function Dashboard() {
 
       <div>
         <div className="topbar"><Wordmark badge={false} /><span className="top-right"><Pic name={badge} className="top-badge" alt={`${planLabel[plan]} plan`} /><Link className="btn secondary small" href="/">Plans</Link></span></div>
+        <div className="dash-grid">
         <main className="main">
           <section className="greeting" aria-labelledby="hello">
             <div>
@@ -92,13 +103,15 @@ function Dashboard() {
           </section>
 
           <section className="section" aria-labelledby="next">
-            <div className="continue">
-              <div>
+            <div className="continue hero-banner">
+              <div className="hero-copy">
                 <p className="label" style={{ margin: 0 }}>Start practising</p>
                 <h3 id="next">Free Listening and Reading tests, books 15–21</h3>
                 <p>Timed like the real test, with your score and the correct answers as soon as you finish.</p>
+                <span className="hero-actions"><Link className="btn accent" href="/practice/listening">Start Listening</Link><Link className="btn secondary" href="/practice/reading">Try Reading</Link></span>
               </div>
-              <Link className="btn accent" href="/practice/listening">Start Listening</Link>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img className="hero-art" src="/studio/art/desk.webp" alt="" width={1600} height={900} />
             </div>
           </section>
 
@@ -142,6 +155,34 @@ function Dashboard() {
             </section>
           </div>
         </main>
+
+        <aside className="rail" aria-label="More for you">
+          <Link className="rail-card spot" href="/mocks">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/studio/art/mock.webp" alt="" width={800} height={600} />
+            <div>
+              <p className="label">Full mock tests</p>
+              <h3>Sit a complete IELTS mock</h3>
+              <p>Listening, Reading and Writing, timed like test day, with an overall band and AI Writing feedback.</p>
+              <span className="rail-foot"><span><b className="num">{profile ? mockCredits : '—'}</b> {mockCredits === 1 ? 'credit' : 'credits'} · ${PLAN_PRICES.mock} each</span><span className="go">Open →</span></span>
+            </div>
+          </Link>
+          <div className="rail-card">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/studio/art/testday.webp" alt="" width={800} height={600} />
+            <div>
+              <p className="label">Test day</p>
+              {countdown !== null
+                ? <><h3><span className="num big"><CountUp value={countdown} /></span> {countdown === 1 ? 'day' : 'days'} to go</h3><p>A mock test every week or two shows how close you are to {target ? `band ${band(target)}` : 'your target'}.</p></>
+                : <><h3>No test date yet</h3><p>Booked your IELTS? Add the date to your Smart Labs profile and we will count down with you.</p></>}
+            </div>
+          </div>
+          <div className="rail-card tip">
+            <p className="label">Tip of the day</p>
+            <p className="tip-text">{TIPS[new Date().getDate() % TIPS.length]}</p>
+          </div>
+        </aside>
+        </div>
       </div>
 
       <nav className="tabbar" aria-label="Main">
