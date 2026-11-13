@@ -115,3 +115,6 @@
 .side nav .nav-button:hover .ic img { transform: translateX(3px); }
 .head-actions .who { font-size: 14px; color: var(--ink-2); }
 @media (max-width: 520px) { .head-actions .who { display: none; } }
+.btn.picked { animation: picked 1.4s ease-in-out 3; box-shadow: 0 0 0 4px var(--accent-wash); }
+@keyframes picked { 50% { box-shadow: 0 0 0 9px rgba(208,16,27,.18); } }
+.picked-note { font-size: 13px; color: var(--accent-ink); margin: 6px 0 0; font-weight: 600; }

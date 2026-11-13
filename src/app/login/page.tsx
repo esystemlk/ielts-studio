@@ -19,6 +19,9 @@ export default function StudioLoginPage() {
   const [password, setPassword] = useState('');
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
+  const [signupHref, setSignupHref] = useState('/signup');
+  // Keep where they were going (e.g. buying a plan) if they create an account instead.
+  useEffect(() => { const r = new URLSearchParams(window.location.search).get('redirect'); if (r) setSignupHref(`/signup?redirect=${encodeURIComponent(r)}`); }, []);
 
   const next = () => safeRedirect(new URLSearchParams(window.location.search).get('redirect'));
   // Already signed in (for example on this device earlier): go straight in.
@@ -55,7 +58,7 @@ export default function StudioLoginPage() {
           <button className="btn block" type="submit" disabled={busy}>{busy ? 'Signing in…' : 'Sign in'}</button>
           <p style={{ margin: '24px 0 10px', fontSize: 14, color: 'var(--ink-2)' }}>New to IELTS Studio?</p>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <Link className="btn secondary block signup-btn" href="/signup"><span className="signup-ic"><img src="/studio/signup.png" alt="" width={256} height={256} /></span>Create a free account</Link>
+          <Link className="btn secondary block signup-btn" href={signupHref}><span className="signup-ic"><img src="/studio/signup.png" alt="" width={256} height={256} /></span>Create a free account</Link>
         </form>
         <AuthFooter />
       </main>

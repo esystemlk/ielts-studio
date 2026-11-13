@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { GoogleAuthProvider, createUserWithEmailAndPassword, signInWithPopup, updateProfile, type User } from 'firebase/auth';
 import { useAuth, useFirestore, useUser } from '@/firebase';
+import { safeRedirect } from '@/lib/studio';
 import { ensureStudioProfile, type StudioProfileExtras } from '@/lib/studio-auth';
 import { WordsReveal, RotatingWord, Marquee } from '@/components/motion';
 import { AuthFooter, GoogleIcon, Wordmark, authErrorMessage } from '@/components/ui';
@@ -21,10 +22,11 @@ export default function StudioSignupPage() {
   const [error, setError] = useState('');
   const set = (k: keyof typeof form) => (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => setForm(f => ({ ...f, [k]: e.target.value }));
 
-  useEffect(() => { if (!isUserLoading && user && !busy) router.replace('/dashboard'); }, [user, isUserLoading, busy, router]);
+  const next = () => safeRedirect(new URLSearchParams(window.location.search).get('redirect'));
+  useEffect(() => { if (!isUserLoading && user && !busy) router.replace(next()); }, [user, isUserLoading, busy, router]);
 
   const study: StudioProfileExtras = { ieltsModule: form.module as StudioProfileExtras['ieltsModule'], ieltsTargetBand: Number(form.target), ieltsTestDate: form.date || undefined };
-  const finish = async (u: User, displayName?: string) => { await ensureStudioProfile(firestore, u, { ...study, displayName }); router.push('/dashboard'); };
+  const finish = async (u: User, displayName?: string) => { await ensureStudioProfile(firestore, u, { ...study, displayName }); router.push(next()); };
   const run = async (fn: () => Promise<void>) => {
     setBusy(true); setError('');
     try { await fn(); } catch (e) { setError(authErrorMessage(e)); setBusy(false); }

@@ -1,20 +1,29 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useUser } from '@/firebase';
 import type { ProductId } from '@/lib/products';
 
-/** Starts a USD PayHere checkout for one product. Signed-out visitors go to sign up first, then back here. */
+/** Starts a USD PayHere checkout for one product. Signed-out visitors sign in (or create an account) first, then come back here. */
 export function BuyButton({ productId, className = 'btn', children }: { productId: ProductId; className?: string; children: React.ReactNode }) {
   const router = useRouter();
   const { user, isUserLoading } = useUser();
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
+  const [picked, setPicked] = useState(false);
+  const ref = useRef<HTMLButtonElement>(null);
+
+  // Back from signing in to buy this: point at the button (never start a payment unasked).
+  useEffect(() => {
+    if (!user || new URLSearchParams(window.location.search).get('buy') !== productId) return;
+    setPicked(true);
+    ref.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }, [user, productId]);
 
   async function buy() {
     if (isUserLoading) return; // still restoring the sign-in: do not treat as signed out
-    if (!user) { router.push(`/signup?redirect=${encodeURIComponent(`${window.location.pathname}?buy=${productId}`)}`); return; }
+    if (!user) { router.push(`/login?redirect=${encodeURIComponent(`${window.location.pathname}?buy=${productId}`)}`); return; }
     setBusy(true); setError('');
     try {
       const res = await fetch('/api/pay/create', { method: 'POST', headers: { 'content-type': 'application/json', authorization: `Bearer ${await user.getIdToken()}` }, body: JSON.stringify({ productId }) });
@@ -35,7 +44,7 @@ export function BuyButton({ productId, className = 'btn', children }: { productI
 
   return (
     <>
-      <button type="button" className={className} onClick={buy} disabled={busy || isUserLoading}>{busy ? 'Opening PayHere…' : children}</button>
+      <button ref={ref} type="button" className={`${className}${picked ? ' picked' : ''}`} onClick={buy} disabled={busy || isUserLoading}>{busy ? 'Opening PayHere…' : children}</button>
       {error && <p role="alert" className="form-error" style={{ marginTop: 8 }}>{error}</p>}
     </>
   );
