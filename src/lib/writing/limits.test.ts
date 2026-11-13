@@ -17,3 +17,10 @@ assert.deepEqual(writingAllowance('unlimited', 2, { today: { task2: 99 } }), { o
 assert.equal(writingDay(new Date('2026-11-13T18:29:00Z')), '2026-11-13');
 assert.equal(writingDay(new Date('2026-11-13T18:31:00Z')), '2026-11-14');
 console.log('writing limits self-check passed');
+
+// Speaking: paid plans only, fair-use cap per day.
+import { speakingAllowance, SPEAKING_DAILY_FAIR_USE } from './limits';
+assert.equal(speakingAllowance('free', 0).ok, false);
+assert.deepEqual(speakingAllowance('plus', 0), { ok: true, left: SPEAKING_DAILY_FAIR_USE - 1 });
+assert.equal(speakingAllowance('unlimited', SPEAKING_DAILY_FAIR_USE).ok, false);
+console.log('speaking limits self-check passed');

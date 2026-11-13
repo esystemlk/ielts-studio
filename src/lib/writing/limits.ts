@@ -21,3 +21,12 @@ export function writingAllowance(plan: StudioPlan, task: 1 | 2, usage: WritingUs
   const used = (task === 1 ? usage.today.task1 : usage.today.task2) ?? 0;
   return used < daily ? { ok: true, left: daily - used - 1 } : { ok: false, reason: `You have used today's ${daily} Task ${task} answers. Your limit resets at midnight (Sri Lanka time), or go Unlimited.` };
 }
+
+/** Speaking is a Plus/Unlimited feature. Fair-use cap per Sri Lanka day to keep AI costs predictable. */
+export const SPEAKING_DAILY_FAIR_USE = 20;
+export function speakingAllowance(plan: StudioPlan, usedToday: number): Allowance {
+  if (plan === 'free') return { ok: false, reason: 'Speaking practice is part of Plus and Unlimited.' };
+  return usedToday < SPEAKING_DAILY_FAIR_USE
+    ? { ok: true, left: SPEAKING_DAILY_FAIR_USE - usedToday - 1 }
+    : { ok: false, reason: `You have had ${SPEAKING_DAILY_FAIR_USE} Speaking answers marked today. Your limit resets at midnight (Sri Lanka time).` };
+}

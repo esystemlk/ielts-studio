@@ -7,7 +7,7 @@
 // types (src/types/essay.ts) but on the IELTS scale.
 
 // TR = Task Response (Task 2 essays) · TA = Task Achievement (Task 1 reports).
-export type IeltsCriterionCode = 'TR' | 'TA' | 'CC' | 'LR' | 'GRA';
+export type IeltsCriterionCode = 'TR' | 'TA' | 'CC' | 'LR' | 'GRA' | 'FC' | 'P'; // FC, P: Speaking
 
 /** One of the four official criteria. Extra fields are per-criterion. */
 export interface IeltsCriterion {
