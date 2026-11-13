@@ -346,7 +346,7 @@ function WritingPhase({ writing, t1, setT1, t2, setT2, onSubmit, error, staff }:
   );
 }
 
-function EssayFeedback({ r, question, response }: { r: IeltsEssayResult; question?: string; response?: string }) {
+export function EssayFeedback({ r, question, response }: { r: IeltsEssayResult; question?: string; response?: string }) {
   return (
     <div className="mk-feedback">
       {response && <details className="mk-card"><summary>Question and your answer</summary>{question && <p className="mk-prompt">{question}</p>}<p className="mk-response">{response}</p></details>}
